@@ -8,7 +8,7 @@ export const Landing = (): JSX.Element => {
             <div className="absolute w-full h-[905px] top-[-700px] hidden lg:block">
                 <div className="w-full h-[905px] top-0 left-0 bg-[#002a38] rounded-[1134.5px/452.5px] blur-[500px]" />
             </div>
-            <div className="fixed w-[600px] h-[352px] top-[-100px] left-[-100px] bg-[#002a38] blur-[60px] hidden max-sm:block" />
+            <div className="absolute w-[480px] h-[352px] top-[-100px] left-[-100px] bg-[#002a38] blur-[60px] hidden max-sm:block" />
             <div className="flex-col overflow-hidden self-center relative flex min-h-[652px] w-full max-w-full mt-8 pt-96 pb-20 px-5 max-md:pt-24">
                 <img
                     loading="lazy"
