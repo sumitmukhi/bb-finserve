@@ -81,7 +81,7 @@ export const Navbar = (): JSX.Element => {
                         About Us
                     </div>
                 </div>
-                <div className="inline-flex h-10 justify-center items-center gap-2 shrink-0 border px-4 py-0 rounded-lg border-solid border-[rgba(255,255,255,0.20)] contact-us">
+                <div className="inline-flex h-10 justify-center items-center gap-2 shrink-0 border px-4 py-0 rounded-lg border-solid border-[rgba(255,255,255,0.20)] text-white contact-us">
                     Contact Us
                 </div>
                 {/* <div className="inline-flex h-[40px] items-center justify-center gap-[8px] px-[16px] py-0 relative bg-white rounded-[8px] border border-solid border-[#ffffff33] [background:linear-gradient(90deg,rgb(100.31,255,255)_0%,rgba(141.31,255,255,0)_97.47%)] border-[rgba(255,255,255,0.20)] contact us">

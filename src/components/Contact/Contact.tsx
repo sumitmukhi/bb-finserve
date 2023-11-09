@@ -5,10 +5,10 @@ export const Contact = (): JSX.Element => {
     return (
         <div>
             <div className="self-stretch flex min-h-[96px] w-full flex-col mt-36 max-sm:mt-10 max-sm:min-h-[26px] border-t-white border-t-opacity-0 border-t border-solid max-md:max-w-full border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(255,255,255)_49.4%,rgba(255,255,255,0)_100%)_1]" />{" "}
-            <div className="text-white text-center text-3xl max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10">
+            <div className="text-white text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10">
                 IN Partnership With
             </div>{" "}
-            <div className="self-center flex w-full max-w-[971px] m-auto items-start justify-between gap-5 mt-16 px-5 max-md:max-w-full max-md:flex-wrap max-md:justify-center max-md:mt-10">
+            <div className="self-center flex w-full max-w-[971px] m-auto items-start justify-between gap-5 mt-8 px-5 max-md:max-w-full max-md:flex-wrap max-md:justify-center max-md:mt-10">
                 <div className="absolute hidden md:block w-[437px] h-[129px] left-0 [background:linear-gradient(90deg,rgb(0,0,0)_29.69%,rgba(0,0,0,0)_100%)]" />
                 <img
                     loading="lazy"
@@ -32,9 +32,9 @@ export const Contact = (): JSX.Element => {
                 />
                 <div className="absolute hidden md:block w-[427px] h-[129px] right-0 rotate-180 [background:linear-gradient(90deg,rgb(0,0,0)_49.69%,rgba(0,0,0,0)_100%)]" />
             </div>{" "}
-            <div className="border self-center flex w-full max-w-[1200px] m-auto max-sm:mx-5 max-sm:p-10 max-sm:w-auto flex-col mt-28 px-20 py-16 rounded-3xl border-solid border-white border-opacity-20 max-md:max-w-full max-md:mt-10 max-md:px-5 border border-solid border-[#ffffff33] [background:linear-gradient(90deg,rgba(141.31,255,255,0.36)_0%,rgba(141.31,255,255,0)_97.47%)]">
+            <div className="border self-center flex w-full max-w-[1200px] m-auto max-sm:mx-5 max-sm:p-10 max-sm:w-auto flex-col mt-28 px-20 py-16 rounded-3xl border-solid border-white border-opacity-20 max-md:max-w-full max-md:mt-10 max-md:px-5 border border-solid border-[#ffffff33] [background:linear-gradient(90deg,rgba(141.31,255,255,0.26)_0%,rgb(141.31,255,255,8%)_70.47%)]">
                 <div className="self-center flex w-[648px] max-w-full flex-col">
-                    <div className="text-white text-center text-3xl max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap">
+                    <div className="text-white text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap">
                         Contact Us
                     </div>{" "}
                     <img

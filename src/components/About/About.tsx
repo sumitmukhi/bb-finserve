@@ -5,7 +5,7 @@ export const About = (): JSX.Element => {
     return (
         <div>
             <div className="self-stretch flex min-h-[97px] w-full flex-col mt-36 max-sm:min-h-[20px] border-t-white border-t-opacity-0 border-t border-solid border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(255,255,255)_49.4%,rgba(255,255,255,0)_100%)_1] max-md:max-w-full max-md:mt-10" />
-            <div className="text-white text-center text-3xl max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10">
+            <div className="text-white text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10">
                 About Us
             </div>
             <div className="self-center w-full max-w-[1197px] max-sm:p-10 mt-16 max-md:max-w-full max-md:mt-10 max-sm:mt-0 m-auto">

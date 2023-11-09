@@ -36,7 +36,8 @@ export const Landing = (): JSX.Element => {
                         <div className="text-cyan-400 text-center  text-base font-semibold tracking-[4.16px] uppercase">
                             Loan in 48 hrs
                         </div>
-                        <div className="self-center flex w-1 h-1 flex-col my-auto rounded-[50%]" />
+                        {/* <div className="self-center flex w-2 h-2 shrink-0 flex-col my-auto rounded-[50%] fill-[#14DFDF]" /> */}
+                        <div className="self-center flex w-[4px] h-[4px] bg-[#14dfdf] rounded-[2px] hidden lg:block"></div>
                         <div className="text-cyan-400 text-center text-base font-semibold tracking-[4.16px] uppercase self-stretch whitespace-nowrap">
                             Low Interest Rates
                         </div>
@@ -53,7 +54,7 @@ export const Landing = (): JSX.Element => {
                 <div className="w-full h-[190px] [background:linear-gradient(0deg,rgb(11,15,16)_0%,rgba(11,15,16,0)_100%)]" />
             </div>
             <div className="self-stretch z-[1] flex w-full pt-0 flex-col pb-16 px-20 border-b-white border-b-opacity-0 border-b border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(255,255,255)_49.4%,rgba(255,255,255,0)_100%)_1] max-md:max-w-full max-md:px-5">
-                <div className="justify-center items-center border self-center z-[1] flex w-12 max-w-full -m-8 flex-col p-2 rounded-[100px] border border-none border-transparent [border-image:linear-gradient(to_top,rgba(255,255,255,0.26),rgba(255,255,255,0))_1] [background:linear-gradient(180deg,rgba(255,255,255,0.2)_0%,rgba(255,255,255,0)_100%)]">
+                <div className="justify-center items-center border self-center z-[1] flex w-12 max-w-full -m-8 flex-col p-2 rounded-[100px] border border-solid border-[rgba(255,255,255,0.26)] [background:linear-gradient(90deg,rgba(255,255,255,0.2)_0%,rgba(255,255,255,0)_100%)]">
                     {/* <img
                         loading="lazy"
                         src="https://cdn.builder.io/api/v1/image/assets/TEMP/1d823c37-acc9-4694-a384-8b1f61561699?apiKey=54f59c00fe214313b710779cabd91fdd&"
