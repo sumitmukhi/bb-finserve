@@ -3,28 +3,28 @@ import React from "react";
 
 export const Footer = (): JSX.Element => {
     return (
-        <div className="self-stretch flex w-full flex-col mt-10 pl-10 pr-12 pt-20 pb-12 max-md:max-w-full max-md:px-5">
-            <div className="self-center flex w-full max-w-[1352px] items-start justify-between gap-5 max-md:max-w-full max-md:flex-wrap max-md:justify-center">
+        <div className="self-stretch flex w-full flex-col max-sm:[background:#000] max-sm:[font-family:'General_Sans-Regular'] mt-10 pl-10 pr-12 pt-20 pb-12 max-md:max-w-full max-md:px-5">
+            <div className="self-center flex w-full max-w-[1352px] items-start justify-between gap-5 max-md:max-w-full max-md:flex-wrap max-md:justify-center max-sm:justify-start">
                 <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef9b8d11-272e-4720-854f-f58450c44caa?apiKey=54f59c00fe214313b710779cabd91fdd&"
                     className="aspect-[2.23] object-contain object-center w-[174px] overflow-hidden max-w-full self-end"
                 />{" "}
-                <div className="flex w-[604px] max-w-full items-start justify-between gap-5 mt-16 self-end max-md:flex-wrap max-md:justify-center max-md:mt-10">
-                    <div className="text-white text-sm font-medium self-start">
+                <div className="flex w-[604px] max-w-full max-sm:flex-col items-start justify-between gap-5 max-sm:mt-5 mt-16 self-end max-md:flex-wrap max-md:justify-center max-md:mt-10">
+                    <div className="text-white text-sm max-sm:text-base font-medium self-start">
                         Home
                     </div>{" "}
-                    <div className="text-white text-center text-sm font-medium self-start">
+                    <div className="text-white text-center text-sm max-sm:text-base font-medium self-start">
                         What We Offer
                     </div>{" "}
-                    <div className="text-white text-sm font-medium">Why Choose Us</div>{" "}
-                    <div className="text-white text-sm font-medium self-start">
+                    <div className="text-white text-sm max-sm:text-base font-medium">Why Choose Us</div>{" "}
+                    <div className="text-white text-sm max-sm:text-base font-medium self-start">
                         Policies
                     </div>{" "}
-                    <div className="text-white text-sm font-medium self-start">
+                    <div className="text-white text-sm max-sm:text-base font-medium self-start">
                         About Us
                     </div>{" "}
-                    <div className="text-white text-sm font-medium whitespace-nowrap self-start">
+                    <div className="text-white text-sm max-sm:text-base font-medium whitespace-nowrap self-start">
                         Contact
                     </div>
                 </div>{" "}

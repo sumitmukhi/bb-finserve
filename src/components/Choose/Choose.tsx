@@ -1,15 +1,16 @@
 
 import React from "react";
 import { PropertyDefaultWrapper } from "@/components/PropertyDefaultWrapper";
+import { Cards } from ".";
 
 export const Choose = (): JSX.Element => {
     return (
         <div>
-            <div className="w-full text-white text-center text-3xl font-bold uppercase self-center whitespace-nowrap mt-16 pt-16 max-md:mt-10 border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(255,255,255)_49.4%,rgba(255,255,255,0)_100%)_1] ">
+            <div className="w-full text-white text-center text-3xl max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap mt-16 pt-16 max-md:mt-10 border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(255,255,255)_49.4%,rgba(255,255,255,0)_100%)_1] ">
                 Why Choose Us
             </div>
             <PropertyDefaultWrapper
-                className="self-center w-[942px] max-w-full mt-20 px-5 max-md:mt-10 m-auto"
+                className="self-center w-[942px] max-w-full mt-20 px-5 max-md:mt-10 m-auto hidden lg:block"
                 clipPathGroup="/img/clip-path-group.png"
                 group="/img/group.png"
                 groupClassName="bg-[url(../../public/img/vector-2.svg)]"
@@ -28,6 +29,9 @@ export const Choose = (): JSX.Element => {
                 rectangle8="img/rectangle-23.png"
                 rectangle9="img/rectangle-24.png"
             />
+
+            <div className="hidden max-sm:block"><Cards /></div>
+
         </div>
     );
 };
