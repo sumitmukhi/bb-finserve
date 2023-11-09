@@ -6,6 +6,10 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  webpack: (config) => {
+    config.resolve.alias.canvas = false;
+    return config;
+  },
 }
 
 
