@@ -97,3 +97,9 @@ body {
 .active > .shadow{
   @apply block
 }
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+  width: 100% !important;
+  height: 100% !important;
+}
