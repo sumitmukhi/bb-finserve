@@ -10,8 +10,37 @@ export const Navbar = (): JSX.Element => {
     const toggleClose = () => {
         setIsOpen(!isOpen);
     };
+
+    React.useEffect(() => {
+    (window.onscroll = () => {
+        let current: string | null;
+        const sections = document.querySelectorAll("section");
+        const navLi = document.querySelectorAll("#homenav a div");
+
+        console.log("here", navLi);
+      
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop ) {
+            current = section.getAttribute("id"); }
+        });
+      
+        navLi.forEach((li) => {
+          li.classList.remove("active");
+        //   const navshadow = document.getElementById("shadow");
+        //   if(navshadow) navshadow!.classList.remove("shadow");
+          if (li.classList.contains(current!)) {
+            li.classList.add("active");
+            // let element = document.createElement("div");
+            // element.setAttribute("id", "shadow");
+            // element.classList.add("shadow");
+            // li.appendChild(element)
+          }
+        });
+      })();
+});
     return (
-        <div className="fixed backdrop-blur-[25px] bg-white bg-opacity-0 self-stretch z-[1] flex w-full items-start justify-between gap-5 px-12 py-4 border-b-white border-b-opacity-0 border-b border-solid max-md:max-w-full [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(255,255,255)_49.4%,rgba(255,255,255,0)_100%)_1] max-md:flex-wrap max-md:px-5 max-sm:px-0">
+        <div className="fixed backdrop-blur-[25px] bg-white bg-opacity-0 self-stretch z-[50] flex w-full items-start justify-between gap-5 px-12 py-4 border-b-white border-b-opacity-0 border-b border-solid max-md:max-w-full [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(255,255,255)_49.4%,rgba(255,255,255,0)_100%)_1] max-md:flex-wrap max-md:px-5 max-sm:px-0">
             <div className="flex items-start gap-2.5 self-start max-md:justify-center max-sm:px-5">
                 <img
                     loading="lazy"
@@ -38,52 +67,56 @@ export const Navbar = (): JSX.Element => {
                         </svg>
                     </button>}
             </div>
-            <div className={`navbar-menu relative w-full z-50 ${!isOpen ? 'hidden' : ''} `}>
+            <div className={`navbar-menu relative w-full h-[100vh] z-50 ${!isOpen ? 'hidden' : ''} `}>
                 {/* <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div> */}
-                <div className="flex flex-col w-full h-[100vh] items-center justify-center gap-[56px] relative bg-white [background:linear-gradient(180deg,rgba(0,0,0,0.4)_0%,rgba(0,0,0,0)_100%)]">
-                    <div className="relative w-fit [text-shadow:0px_0px_15px_#ffffff] [font-family:'General_Sans-Semibold',Helvetica] font-normal text-white text-[20px] tracking-[0] leading-[normal] mt-[-100px]">
+                <div className="flex flex-col w-full pt-[100px]  items-center justify-center gap-[56px] relative bg-white [background:linear-gradient(180deg,rgba(0,0,0,0.4)_0%,rgba(0,0,0,0)_100%)]">
+                    <a href="#home"><div className="relative w-fit [text-shadow:0px_0px_15px_#ffffff] [font-family:'General_Sans-Semibold',Helvetica] font-normal text-white text-[20px] tracking-[0] leading-[normal]">
                         Home
-                    </div>
-                    <div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
+                    </div></a>
+                    <a href="#offer"><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
                         What We Offer
-                    </div>
-                    <div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
+                    </div></a>
+                    <a href="#choose"><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
                         Why Choose Us
-                    </div>
-                    <div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
+                    </div></a>
+                    <a href="#policy"><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
                         Our Policies
-                    </div>
-                    <div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
+                    </div></a>
+                    <a href="#about"><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
                         About Us
-                    </div>
-                    <div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
+                    </div></a>
+                    <a href="#contact"><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
                         Contact Us
-                    </div>
+                    </div></a>
                 </div>
             </div>
             {/* <div className=" "> */}
-                <div className="hidden md:flex md:visible navbar self-center flex w-[608px] max-w-full items-start justify-between gap-5 my-auto max-md:flex-wrap max-md:justify-center">
-                    <div className="text-white text-center text-base font-semibold self-start active">
+                <div id="homenav" className="hidden md:flex md:visible navbar self-center flex w-[608px] max-w-full items-start justify-between gap-5 my-auto max-md:flex-wrap max-md:justify-center">
+                    <a href="#home"><div className="text-white text-center text-base self-start home active">
                         {/* <div className="absolute w-[69px] h-[27px] -ml-[14px] -top-5 bg-[#ffffffeb] blur-[25px] z-[1]" /> */}
-                        <div className="shadow" />
+                        <div className="shadow absolute w-[60px] h-[27px] -top-5 -ml-[10px]" />
                         Home
-                    </div>
-                    <div className="text-stone-300 text-center text-base leading-6">
+                    </div></a>
+                    <a href="#offer"><div className="text-stone-300 text-center text-base leading-6 offer">
                         What We Offer
-                    </div>
-                    <div className="text-stone-300 text-center text-base leading-6">
+                        <div className="shadow absolute w-[60px] h-[27px] -top-5 ml-[10px]" />
+                    </div></a>
+                    <a href="#choose"><div className="text-stone-300 text-center text-base leading-6 choose">
                         Why Choose Us
-                    </div>
-                    <div className="text-stone-300 text-center text-base leading-6 self-start">
+                        <div className="shadow absolute w-[60px] h-[27px] -top-5 ml-[20px]" />
+                    </div></a>
+                    <a href="#policy"><div className="text-stone-300 text-center text-base leading-6 self-start policy">
                         Policies
-                    </div>
-                    <div className="text-stone-300 text-center text-base leading-6 whitespace-nowrap self-start">
+                        <div className="shadow absolute w-[60px] h-[27px] -top-5 -ml-[10px]" />
+                    </div></a>
+                    <a href="#about"><div className="text-stone-300 text-center text-base leading-6 whitespace-nowrap self-start about">
                         About Us
-                    </div>
+                        <div className="shadow absolute w-[60px] h-[27px] -top-5 ml-[0px]" />
+                    </div></a>
                 </div>
-                <div className="inline-flex h-10 justify-center items-center gap-2 shrink-0 border px-4 py-0 rounded-lg border-solid border-[rgba(255,255,255,0.20)] text-white contact-us">
+                <a href="#contact"><div className="inline-flex h-10 justify-center items-center gap-2 shrink-0 border px-4 py-0 rounded-lg border-solid border-[rgba(255,255,255,0.20)] text-white contact-us">
                     Contact Us
-                </div>
+                </div></a>
                 {/* <div className="inline-flex h-[40px] items-center justify-center gap-[8px] px-[16px] py-0 relative bg-white rounded-[8px] border border-solid border-[#ffffff33] [background:linear-gradient(90deg,rgb(100.31,255,255)_0%,rgba(141.31,255,255,0)_97.47%)] border-[rgba(255,255,255,0.20)] contact us">
                     <div className="relative w-fit [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[16px] tracking-[0] leading-[17.6px] whitespace-nowrap">
                         Contact Us

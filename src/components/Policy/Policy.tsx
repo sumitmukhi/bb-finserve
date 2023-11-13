@@ -8,9 +8,9 @@ export const Policy = (): JSX.Element => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div>
-            <div className="self-stretch flex min-h-[97px] w-full flex-col mt-20 max-sm:min-h-[20px] border-t-white border-t-opacity-0 border-t border-solid max-md:max-w-full max-md:mt-10 border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(255,255,255)_49.4%,rgba(255,255,255,0)_100%)_1]" />
-            <div className="text-white text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10">
+        <div >
+            <section id="policy" className="self-stretch flex min-h-[97px] w-full flex-col mt-20 max-sm:min-h-[20px] border-t-white border-t-opacity-0 border-t border-solid max-md:max-w-full max-md:mt-10 border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(255,255,255)_49.4%,rgba(255,255,255,0)_100%)_1]" />
+            <div  className="text-white text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10">
                 Our Policies
             </div>
             <div className="self-center flex w-full max-w-[1200px] items-start justify-between gap-5 mt-16 px-5 max-md:max-w-full max-md:flex-wrap max-md:mt-10 m-auto">
@@ -101,7 +101,7 @@ export const Policy = (): JSX.Element => {
                     </div>
                 </div>
             </div>
-            <Modal open={open} onClose={() => setOpen(false)} title={'Interest Rate Policy'} file={"dummy.pdf"} />
+            <Modal open={open} onClose={() => setOpen(false)} title={'Interest Rate Policy'} file={"drylab.pdf"} />
         </div>
     );
 };
