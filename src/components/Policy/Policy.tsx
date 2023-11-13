@@ -8,14 +8,14 @@ export const Policy = (): JSX.Element => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div>
-            <div className="self-stretch flex min-h-[97px] w-full flex-col mt-20 max-sm:min-h-[20px] border-t-white border-t-opacity-0 border-t border-solid max-md:max-w-full max-md:mt-10 border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(255,255,255)_49.4%,rgba(255,255,255,0)_100%)_1]" />
-            <div className="text-white text-center text-3xl max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10">
+        <div >
+            <section id="policy" className="self-stretch flex min-h-[97px] w-full flex-col mt-20 max-sm:min-h-[20px] border-t-white border-t-opacity-0 border-t border-solid max-md:max-w-full max-md:mt-10 border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(255,255,255)_49.4%,rgba(255,255,255,0)_100%)_1]" />
+            <div  className="text-white text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10">
                 Our Policies
             </div>
             <div className="self-center flex w-full max-w-[1200px] items-start justify-between gap-5 mt-16 px-5 max-md:max-w-full max-md:flex-wrap max-md:mt-10 m-auto">
                 <div className="flex flex-col grow shrink-0 basis-auto flex-1 max-md:max-w-full w-1/2">
-                    <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-white max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
+                    <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full  [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
                         <div className="items-start self-stretch flex w-full justify-between gap-5 max-md:flex-wrap">
                             <div className="self-stretch flex items-start justify-between gap-4">
                                 <img
@@ -36,7 +36,7 @@ export const Policy = (): JSX.Element => {
                     </div>
                 </div>
                 <div className="flex flex-col grow shrink-0 basis-auto flex-1 max-md:max-w-full w-1/2">
-                    <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-white max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
+                    <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
                         <div className="items-start self-stretch flex w-full justify-between gap-5 max-md:flex-wrap">
                             <div className="self-stretch flex items-start justify-between gap-4">
                                 <img
@@ -59,7 +59,7 @@ export const Policy = (): JSX.Element => {
             </div>
             <div className="self-center flex w-full max-w-[1200px] items-start justify-between gap-5 mt-8 px-5 max-md:max-w-full max-md:flex-wrap m-auto">
                 <div className="flex flex-col grow shrink-0 basis-auto flex-1 max-md:max-w-full w-1/2">
-                    <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-white max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
+                    <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
                         <div className="items-start self-stretch flex w-full justify-between gap-5 max-md:flex-wrap">
                             <div className="self-stretch flex items-start justify-between gap-4">
                                 <img
@@ -80,7 +80,7 @@ export const Policy = (): JSX.Element => {
                     </div>
                 </div>
                 <div className="flex flex-col grow shrink-0 basis-auto flex-1 max-md:max-w-full w-1/2">
-                    <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-white max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
+                    <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
                         <div className="items-start self-stretch flex w-full justify-between gap-5 max-md:flex-wrap">
                             <div className="self-stretch flex items-start justify-between gap-4">
                                 <img
@@ -101,7 +101,7 @@ export const Policy = (): JSX.Element => {
                     </div>
                 </div>
             </div>
-            <Modal open={open} onClose={() => setOpen(false)} title={'Interest Rate Policy'} file={"dummy.pdf"} />
+            <Modal open={open} onClose={() => setOpen(false)} title={'Interest Rate Policy'} file={"drylab.pdf"} />
         </div>
     );
 };

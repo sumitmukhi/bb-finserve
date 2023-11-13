@@ -195,7 +195,7 @@ export default function Desktop() {
                             rel="noopener noreferrer"
                             target="_blank"
                         >
-                            <div className="relative w-[16px] h-[16px] top-[2px] left-[2px] bg-[url(../../public/img/linkedin.svg)] bg-[100%_100%]" />
+                            {/* <div className="relative w-[16px] h-[16px] top-[2px] left-[2px] bg-[url(../../public/img/linkedin.svg)] bg-[100%_100%]" /> */}
                         </a>
                     </div>
                     <div className="absolute w-[605px] h-[19px] top-[139px] left-[418px]">

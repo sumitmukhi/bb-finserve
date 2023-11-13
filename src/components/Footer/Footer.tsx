@@ -28,11 +28,18 @@ export const Footer = (): JSX.Element => {
                         Contact
                     </div>
                 </div>{" "}
-                <img
+                {/* <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/58e02ef5-8b5b-49ac-919a-5b95b2f7bff5?apiKey=54f59c00fe214313b710779cabd91fdd&"
                     className="aspect-[3.26] object-contain object-center w-[62px] overflow-hidden max-w-full mt-14 self-end max-md:mt-10"
-                />
+                /> */}
+                <div className="relative object-contain object-center w-[130px] mt-14 flex flex-wrap gap-3 self-end">
+                    <a href=""><img className="w-[8px] h-[15px]" alt="Facebook" src="/img/facebook.svg" /></a>
+                    <a href=""><img className="w-[15px] h-[12px]" alt="Twitter" src="/img/twitter.svg" /></a>
+                    <a href=""><img className="w-[15px] h-[15px]" alt="Instagram" src="/img/instagram.svg" /></a>
+                    <a href=""><div className="relative w-[15px] h-[14px] bg-[url(/img/linkedin.svg)] bg-[100%_100%]" /></a>
+                    <a href=""><div className="relative w-[17px] h-[12px] left-px bg-[url(/img/youtube.svg)] bg-[100%_100%]" /></a>
+                </div>
             </div>{" "}
             <div className="self-center flex w-full max-w-[1352px] items-start justify-between gap-5 mt-16 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
                 <div className="text-neutral-500 text-sm self-stretch grow shrink basis-auto">

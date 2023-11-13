@@ -26,7 +26,7 @@ export const Modal = ({ open, onClose, title, file }: Props): JSX.Element => {
 
             <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
                 <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-                    <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                    <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all max-w-[fit-content] sm:my-8 sm:w-full max-sm:max-w-md">
                         <div className="bg-black px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                             <div className="items-start shadow-sm flex gap-2 pl-4 pr-28 max-md:flex-wrap max-md:pr-5">
                                 <img
@@ -45,7 +45,7 @@ export const Modal = ({ open, onClose, title, file }: Props): JSX.Element => {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4 max-h-[500px]">
+                        <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4 max-h-[500px] overflow-auto">
                             <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
                                 <Page pageNumber={pageNumber} />
                             </Document>
