@@ -70,22 +70,22 @@ export const Navbar = (): JSX.Element => {
             <div className={`navbar-menu relative w-full h-[100vh] z-50 ${!isOpen ? 'hidden' : ''} `}>
                 {/* <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div> */}
                 <div className="flex flex-col w-full pt-[100px]  items-center justify-center gap-[56px] relative bg-white [background:linear-gradient(180deg,rgba(0,0,0,0.4)_0%,rgba(0,0,0,0)_100%)]">
-                    <a href="#home"><div className="relative w-fit [text-shadow:0px_0px_15px_#ffffff] [font-family:'General_Sans-Semibold',Helvetica] font-normal text-white text-[20px] tracking-[0] leading-[normal]">
+                    <a href="#home" onClick={toggleClose}><div className="relative w-fit [text-shadow:0px_0px_15px_#ffffff] [font-family:'General_Sans-Semibold',Helvetica] font-normal text-white text-[20px] tracking-[0] leading-[normal]">
                         Home
                     </div></a>
-                    <a href="#offer"><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
+                    <a href="#offer" onClick={toggleClose}><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
                         What We Offer
                     </div></a>
-                    <a href="#choose"><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
+                    <a href="#choose" onClick={toggleClose}><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
                         Why Choose Us
                     </div></a>
-                    <a href="#policy"><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
+                    <a href="#policy" onClick={toggleClose}><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
                         Our Policies
                     </div></a>
-                    <a href="#about"><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
+                    <a href="#about" onClick={toggleClose}><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
                         About Us
                     </div></a>
-                    <a href="#contact"><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
+                    <a href="#contact" onClick={toggleClose}><div className="relative w-fit opacity-60 [font-family:'General_Sans-Medium',Helvetica] font-medium text-white text-[20px] tracking-[0] leading-[normal]">
                         Contact Us
                     </div></a>
                 </div>
