@@ -98,6 +98,9 @@ body {
   @apply block
 }
 
+.react-pdf__Page{
+  min-width: auto !important;
+}
 .react-pdf__Page__canvas {
   margin: 0 auto;
   width: 100% !important;
