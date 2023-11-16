@@ -4,7 +4,7 @@ import React from "react";
 export const About = (): JSX.Element => {
     return (
         <div >
-            <section id="about" className="self-stretch flex min-h-[97px] w-full flex-col mt-36 max-sm:min-h-[20px] border-t-white border-t-opacity-0 border-t border-solid border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(255,255,255)_49.4%,rgba(255,255,255,0)_100%)_1] max-md:max-w-full max-md:mt-10" />
+            <section id="about" className="self-stretch flex min-h-[97px] w-full flex-col mt-36 max-sm:min-h-[20px] border-t-white border-t-opacity-0 border-t border-solid border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1] max-md:max-w-full max-md:mt-10" />
             <div className="text-white text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10">
                 About Us
             </div>
@@ -36,7 +36,7 @@ export const About = (): JSX.Element => {
                     </div>
                 </div>
             </div>{" "}
-            <div className="items-start self-center flex w-full max-w-[1199px] max-sm:w-auto max-sm:my-0 max-sm:m-10 flex-col mt-8 p-5 m-auto rounded-3xl max-md:max-w-full [background:radial-gradient(50%_50%_at_50%_50%,rgb(248.63,248.63,248.63)_0%,rgb(194.44,194.44,194.44)_100%)]">
+            <div className="items-start self-center flex w-full max-w-[1199px] max-sm:w-auto max-sm:my-0 max-sm:m-10 flex-col mt-9 p-5 m-auto rounded-3xl max-md:max-w-full [background:radial-gradient(50%_50%_at_50%_50%,rgb(248.63,248.63,248.63)_0%,rgb(194.44,194.44,194.44)_100%)]">
                 <div className="text-black text-3xl max-sm:text-2xl font-semibold leading-10 self-stretch max-md:max-w-full">
                     We as a Company
                 </div>{" "}

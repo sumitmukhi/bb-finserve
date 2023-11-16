@@ -21,12 +21,12 @@ export const Modal = ({ open, onClose, title, file }: Props): JSX.Element => {
         setNumPages(numPages);
     }
     return (
-        <div className={`relative z-10 ${open ? "visible" : "hidden"}`} aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div className={`relative z-10 max-sm:z-[99] max-sm: ${open ? "visible" : "hidden"}`} aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
             <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-                <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-                    <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all max-w-[fit-content] sm:my-8 sm:w-full max-sm:max-w-md">
+                <div className="flex min-h-full items-end max-sm:items-start justify-center p-4 text-center sm:items-center max-sm:p-0">
+                    <div className="relative transform overflow-hidden rounded-lg max-sm:rounded-none bg-white text-left shadow-xl transition-all max-w-[fit-content] sm:my-8 sm:w-full max-sm:max-w-md">
                         <div className="bg-black px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                             <div className="items-start shadow-sm flex gap-2 pl-4 pr-28 max-md:flex-wrap max-md:pr-5">
                                 <img
@@ -45,7 +45,7 @@ export const Modal = ({ open, onClose, title, file }: Props): JSX.Element => {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4 max-h-[500px] overflow-auto">
+                        <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4 max-h-[500px] max-sm:max-h-full overflow-auto">
                             <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
                                 <Page pageNumber={pageNumber} />
                             </Document>
