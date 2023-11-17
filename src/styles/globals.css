@@ -10,42 +10,43 @@
 
 @font-face {
   font-family: "General Sans-Bold";
-  src: url("https://anima-uploads.s3.amazonaws.com/projects/6122bfbc7b578960a9edba6e/fonts/generalsans-bold.otf")
-    format("opentype");
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/6122bfbc7b578960a9edba6e/fonts/generalsans-bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "General Sans-Semibold";
-  src: url("https://anima-uploads.s3.amazonaws.com/projects/60a3cd62c76b77ca6dc246d7/fonts/generalsans-semibold.otf")
-    format("opentype");
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/60a3cd62c76b77ca6dc246d7/fonts/generalsans-semibold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "General Sans-Regular";
-  src: url("https://anima-uploads.s3.amazonaws.com/projects/61e6e72137660fab224b67de/fonts/generalsans-regular.otf")
-    format("opentype");
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/61e6e72137660fab224b67de/fonts/generalsans-regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "General Sans-Medium";
-  src: url("https://anima-uploads.s3.amazonaws.com/projects/60a3cd62c76b77ca6dc246d7/fonts/generalsans-medium.otf")
-    format("opentype");
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/60a3cd62c76b77ca6dc246d7/fonts/generalsans-medium.otf") format("opentype");
 }
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+
 html,
 body {
   margin: 0px;
   height: 100%;
   scroll-behavior: smooth;
 }
+
 button:focus-visible {
   outline: 2px solid #4a90e2 !important;
   outline: -webkit-focus-ring-color auto 5px !important;
 }
+
 a {
   text-decoration: none;
 }
@@ -66,63 +67,73 @@ a {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
-.contact-us{
-    @apply inline-flex h-10 justify-center items-center gap-2 shrink-0 border px-4 py-0 rounded-lg border-solid border-[rgba(255,255,255,0.20)] hidden md:flex md:visible;
-    background: linear-gradient(79deg, #8DFFFF -132.18%, rgba(141, 255, 255, 0.00) 133.68%);
+.contact-us {
+  @apply inline-flex h-10 justify-center items-center gap-2 shrink-0 border px-4 py-0 rounded-lg border-solid hidden md:flex md:visible;
+  background: linear-gradient(79deg, #8DFFFF -132.18%, rgba(141, 255, 255, 0.00) 133.68%);
+  border: rgba(255, 255, 255, 0.20);
 }
 
-.shadow{
-    @apply shrink-0 blur-[30.5px] hidden;
-    background: rgba(255, 255, 255, 0.92);
+.shadow {
+  @apply shrink-0 blur-[30.5px] hidden;
+  background: rgba(255, 255, 255, 0.92);
 }
 
-.offer-card{
+.offer-card {
   @apply shrink-0 backdrop-blur-2xl;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%);
 
 }
 
-.active{
+.active {
   @apply font-semibold
 }
 
-.active > .shadow{
+.active>.shadow {
   @apply block
 }
 
-.react-pdf__Page{
+.react-pdf__Page {
   min-width: auto !important;
 }
+
 .react-pdf__Page__canvas {
   margin: 0 auto;
   width: 100% !important;
   height: 100% !important;
+  /* width: auto !important; */
+  /* height: 100% !important; */
 }
 
-.cards{
+@media (min-width: 576px) {
+  .react-pdf__Page__canvas {
+    width: auto !important;
+  }
+}
+
+.cards {
   background: linear-gradient(180deg, rgba(141.31, 255, 255, 0.08) 0.18%, rgba(141.31, 255, 255, 0.00) 97.47%);
 }
 
-div, img{
+div,
+img {
   -webkit-transition: all 500ms linear;
   -moz-transition: all 500ms linear;
   -ms-transition: all 500ms linear;
   -o-transition: all 500ms linear;
   transition: all 500ms linear;
-  }
+}
 
-.carousel{
+.carousel {
   overflow: auto;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .carousel::-webkit-scrollbar {
