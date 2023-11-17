@@ -17,9 +17,10 @@ export const Cards = (): JSX.Element => {
         else setCurrent(current + 1);
     };
 
-    // let handleOnScroll = () =>  {
-    //     console.log("scroll");
-    // };
+    let handleOnScroll = () =>  {
+        // console.log("scroll");
+        setCurrent(1);
+    };
 
     return (
         <div className="self-stretch mt-9 pr-6 max-md:max-w-full max-md:pr-5 overflow-hidden">
@@ -27,11 +28,11 @@ export const Cards = (): JSX.Element => {
 
             {/*  */}
 
-            <div className="carousel relative shadow-2xl" onTouchMove={nextSlide} onTouchEnd={previousSlide}>
+            <div className="carousel relative shadow-2xl overflow-auto">
                 <div className="carousel-inner relative w-full flex transition ease-out duration-40"
                     style={{
                         transform: `translateX(-${current * 90}%)`,
-                    }}>
+                    }} onScroll={handleOnScroll}>
                     {/* <!--Slide 1--> */}
                     {/* <input className="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" /> */}
                     <div className="carousel-item static opacity-100 h-full">
