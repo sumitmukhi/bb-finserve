@@ -118,3 +118,13 @@ div, img{
   -o-transition: all 500ms linear;
   transition: all 500ms linear;
   }
+
+.carousel{
+  overflow: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
