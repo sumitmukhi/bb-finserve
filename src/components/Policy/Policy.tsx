@@ -9,9 +9,10 @@ export const Policy = (): JSX.Element => {
 
     return (
         // <div >
-        <section id="policy" className="relative self-stretch flex min-h-[97px] w-full flex-col mt-20 max-sm:min-h-[20px] max-md:max-w-full max-md:mt-10 lg:pt-20 border-t-white border-t-opacity-0 border-t border-transparent [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1]" >
-            <div className="absolute hidden lg:block w-[890px] h-[787px] top-[-100px] left-[-500px] bg-[#002a38] rounded-[445px/393.5px] rotate-180 blur-[500px]" />
-            <div className="text-white z-[1] text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10">
+        <section id="policy" className="relative self-stretch flex min-h-[97px] w-full flex-col" >
+            <div className="absolute hidden lg:block w-[890px] h-[787px] top-[-100px] left-[-500px] bg-[#002a38] rounded-[445px/393.5px] rotate-180 blur-[300px]" />
+            <div className="absolute hidden max-sm:block w-[470px] h-[512px] top-[80px] left-[-250px] bg-[#002a38] blur-[200px] rounded-[512px] rotate-180" />
+            <div className="text-white z-[1] text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap w-[60%] m-auto max-md:mt-10 mt-20 max-sm:min-h-[20px] max-md:max-w-full max-md:mt-10 lg:pt-20 max-sm:pt-20 border-t-white border-t-opacity-0 border-t border-transparent [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1]">
                 Our Policies
             </div>
             <div className="self-center z-[1] flex w-full max-w-[1200px] items-start justify-between gap-5 mt-16 px-5 max-md:max-w-full max-md:flex-wrap max-md:mt-10 m-auto">
@@ -58,7 +59,7 @@ export const Policy = (): JSX.Element => {
                     </div>
                 </div>
             </div>
-            <div className="self-center z-[1] flex w-full max-w-[1200px] items-start justify-between gap-5 mt-8 px-5 max-md:max-w-full max-md:flex-wrap m-auto">
+            <div className="self-center z-[1] flex w-full max-w-[1200px] items-start justify-between gap-5 mt-8 px-5 max-md:max-w-full max-md:flex-wrap m-auto max-sm:mt-5">
                 <div className="flex flex-col grow shrink-0 basis-auto flex-1 max-md:max-w-full w-1/2">
                     <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
                         <div className="items-start self-stretch flex w-full justify-between gap-5 max-md:flex-wrap">
@@ -102,7 +103,7 @@ export const Policy = (): JSX.Element => {
                     </div>
                 </div>
             </div>
-            <div className="absolute hidden lg:block w-[890px] h-[787px] top-[-100px] right-[-500px] bg-[#002a38] rounded-[445px/393.5px] blur-[500px]" />
+            <div className="absolute hidden lg:block w-[890px] h-[787px] top-[-100px] right-[-500px] bg-[#002a38] rounded-[445px/393.5px] blur-[300px]" />
             <Modal open={open} onClose={() => setOpen(false)} title={'Interest Rate Policy'} file={"drylab.pdf"} />
         </section>
         // </div>

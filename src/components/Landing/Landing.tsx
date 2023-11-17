@@ -31,7 +31,7 @@ export const Landing = (): JSX.Element => {
                     Loans For used 
                     <br />trucks</span>
                 </div>
-                <div className="relative self-center flex w-[467px] max-w-full z-[2] max-sm:z-[1] items-start justify-between max-sm:gap-0 gap-5 mt-6 max-sm:mt-3 max-md:flex-wrap max-md:justify-center">
+                <div className="relative self-center flex w-[467px] max-w-full z-[2] max-sm:z-[2] items-start justify-between max-sm:gap-0 gap-5 mt-6 max-sm:mt-3 max-md:flex-wrap max-md:justify-center">
                     {/* <span className="hidden md:block"> */}
                         <div className="text-cyan-400 text-center max-sm:w-full max-sm:[font-size:12px] text-base font-semibold tracking-[4.16px] uppercase">
                             Loan in 48 hrs
@@ -50,10 +50,10 @@ export const Landing = (): JSX.Element => {
                     </span> */}
                 </div>
             </div>
-            <div className="absolute lg:block w-full h-[190px] max-sm:h-[290px] top-[496px] max-sm:top-[270px] z-[1]">
-                <div className="w-full h-[190px] max-sm:h-[290px] [background:linear-gradient(0deg,rgb(11,15,16)_0%,rgba(11,15,16,0)_100%)]" />
+            <div className="absolute lg:block w-full h-[190px] max-sm:h-[440px] top-[496px] max-sm:top-[230px] z-[1]">
+                <div className="w-full h-[190px] max-sm:h-[440px] [background:linear-gradient(0deg,rgb(11,15,16)_40%,rgba(11,15,16,0)_100%)]" />
             </div>
-            <div className="self-stretch z-[1] flex w-full pt-0 max-sm:pt-12 flex-col pb-16 px-20 border-b-white border-b-opacity-0 border-b border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1] max-md:max-w-full max-md:px-5">
+            <div className="self-stretch z-[1] flex w-full w-[60%] m-auto pt-0 max-sm:pt-12 flex-col pb-16 px-20 border-b-white border-b-opacity-0 border-b border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1] max-md:max-w-full max-md:px-5">
                 <div className="justify-center items-center border self-center z-[1] flex w-12 max-w-full -m-8 flex-col p-2 rounded-[100px] border border-solid border-[rgba(255,255,255,0.26)] [background:linear-gradient(90deg,rgba(255,255,255,0.2)_0%,rgba(255,255,255,0)_100%)]">
                     {/* <img
                         loading="lazy"
