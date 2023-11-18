@@ -1,11 +1,58 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const Cards = (): JSX.Element => {
 
     const slides = ["a", "b", "c", "d"];
 
     let [current, setCurrent] = useState(0);
+    const [scrollPosition, setScrollPosition] = useState(0);
+    // const handleScroll = (scrolled: any) => {
+    //     // const position = window.pageXOffset;
+    //     // console.log(position);
+
+    //     console.log(scrolled);
+    //     setScrollPosition(scrolled);
+    // };
+    const scrollThreshold = 200;
+
+    useEffect(() => {
+        // const element = document.getElementById('carouselScroll');
+        // const element = document.getElementById('carouselScroll');
+        // const winScroll =
+        //     element? document.body.scrollLeft || element?.scrollWidth : 0
+
+        // const width = element?
+        //     element.scrollWidth -
+        //     element.clientWidth : 0
+
+        // const scrolled = winScroll / width;
+        // // console.log(scrolled);
+        // element?.addEventListener('scroll', () => {handleScroll(scrolled) }, { passive: true });
+
+        // return () => {
+        //     element?.removeEventListener('scroll', handleScroll);
+        // };
+        const element = document.getElementById('carouselScroll');
+        const handleScroll = () => {
+            const winScroll =
+            element? document.body.scrollLeft || element?.scrollWidth : 0
+
+        const width = element?
+            element.scrollWidth -
+            element.clientWidth : 0
+
+        const scrolled = winScroll / width;
+        // console.log(scrolled);
+            setScrollPosition(scrolled);
+        };
+
+        element?.addEventListener('scroll', handleScroll);
+
+        return () => {
+            element?.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     let previousSlide = () => {
         if (current === 0) setCurrent(slides.length - 1);
@@ -17,28 +64,28 @@ export const Cards = (): JSX.Element => {
         else setCurrent(current + 1);
     };
 
-    let handleOnScroll = () =>  {
-        // console.log("scroll");
-        setCurrent(1);
+    let handleOnScroll = () => {
+        console.log("scroll");
+        // setCurrent(1);
     };
 
     return (
         <div className="self-stretch mt-9 pr-6 max-md:max-w-full max-md:pr-5 overflow-hidden">
 
 
-            {/*  */}
+            <h2>{scrollPosition}</h2>
 
-            <div className="carousel relative shadow-2xl overflow-auto">
+            <div id="carouselScroll" className="carousel relative shadow-2xl overflow-auto">
                 <div className="carousel-inner relative w-full flex transition ease-out duration-40"
                     style={{
                         transform: `translateX(-${current * 90}%)`,
-                    }} onScroll={handleOnScroll}>
+                    }}>
                     {/* <!--Slide 1--> */}
                     {/* <input className="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" /> */}
                     <div className="carousel-item static opacity-100 h-full">
                         {/* <div className="block h-full w-full text-white text-5xl text-center">Slide 1</div> */}
                         <div className="flex flex-row items-stretch w-[82%] max-md:w-full max-md:ml-0 gap-5">
-                            
+
                             <div className="items-center border flex w-full max-w-[321px] ml-5 grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                                 <img
                                     loading="lazy"
@@ -98,10 +145,10 @@ export const Cards = (): JSX.Element => {
                                     />
                                     <div className="justify-center items-center self-stretch flex flex-col mt-5">
                                         <div className="text-white text-center text-xl font-semibold self-center whitespace-nowrap">
-                                        Help with Documentation
+                                            Help with Documentation
                                         </div>
                                         <div className="text-white text-center text-xs self-stretch mt-1.5">
-                                        Doorstep service for document collection to expedite loan disbursal
+                                            Doorstep service for document collection to expedite loan disbursal
                                         </div>
                                     </div>
                                 </div>
@@ -221,20 +268,20 @@ export const Cards = (): JSX.Element => {
                 </div>
 
             </div>
-                <div className="mt-10 py-4 flex justify-center gap-3 w-full">
-                    {slides.map((s, i) => {
-                        return (
-                            <div
-                                onClick={() => {
-                                    setCurrent(i);
-                                }}
-                                key={"circle" + i}
-                                className={`rounded-full w-2 h-2 mt-2 cursor-pointer  ${i == current ? "bg-white w-3 h-3 mt-[6px]" : "bg-gray-500"
-                                    }`}
-                            ></div>
-                        );
-                    })}
-                </div>
+            <div className="mt-10 py-4 flex justify-center gap-3 w-full">
+                {slides.map((s, i) => {
+                    return (
+                        <div
+                            onClick={() => {
+                                setCurrent(i);
+                            }}
+                            key={"circle" + i}
+                            className={`rounded-full w-2 h-2 mt-2 cursor-pointer  ${i == current ? "bg-white w-3 h-3 mt-[6px]" : "bg-gray-500"
+                                }`}
+                        ></div>
+                    );
+                })}
+            </div>
 
             {/*  */}
 
