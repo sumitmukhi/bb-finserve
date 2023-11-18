@@ -4,7 +4,7 @@ import { KeyboardArrowDown } from "@/icons/KeyboardArrowDown";
 
 export const Landing = (): JSX.Element => {
     return (
-        <section id="home">
+        <section id="home" className="max-sm:relative">
             <div className="absolute w-full h-[905px] top-[-700px] hidden lg:block">
                 <div className="w-full h-[905px] top-0 left-0 bg-[#002a38] rounded-[1134.5px/452.5px] blur-[500px]" />
             </div>

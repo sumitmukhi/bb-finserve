@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 export const Cards = (): JSX.Element => {
 
     return (
-        <div className="self-stretch mt-9 pr-6 max-md:max-w-full max-md:pr-5 overflow-hidden">
+        <div className="self-stretch mt-9 pr-6 ml-5 max-md:max-w-full max-md:pr-5 overflow-hidden">
             <Swiper
                 pagination={{ type: "bullets", clickable: true }}
                 modules={[Pagination]}
@@ -21,7 +21,7 @@ export const Cards = (): JSX.Element => {
             >
                 <SwiperSlide>
                     <div
-                        className="items-center border flex w-full max-w-[321px] ml-5 grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
+                        className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                         <img
                             loading="lazy"
                             srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&"

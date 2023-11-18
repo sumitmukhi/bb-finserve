@@ -63,8 +63,8 @@ export const Navbar = (): JSX.Element => {
                     className="aspect-[6.85] object-contain object-center w-[89px] max-sm:w-[64px] fill-white overflow-hidden max-w-full mt-6 self-end"
                 />
             </div>
-            <div className="lg:hidden max-sm:px-5 max-sm:mt-[10px] max-sm:ml-auto">
-                {!isOpen ? <button className="navbar-burger flex items-center text-blue-600 p-3 z-[1] ml-[15px] relative left-[20px]" onClick={toggle}>
+            <div className="lg:hidden max-sm:mt-[10px] max-sm:ml-auto">
+                {!isOpen ? <button className="navbar-burger flex items-center text-blue-600 p-3 z-[1] relative left-[20px]" onClick={toggle}>
                     {/* <svg className="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <title>Mobile menu</title>
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
