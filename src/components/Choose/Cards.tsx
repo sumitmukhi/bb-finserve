@@ -1,75 +1,13 @@
-"use client";
-
 import React from "react";
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-// import 'swiper/css/scrollbar';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// import "swiper/swiper.min.css";
-
 export const Cards = (): JSX.Element => {
-
-    const slides = ["a", "b", "c", "d"];
-
-    let [current, setCurrent] = useState(0);
-    const [shouldNotSwipe, setShouldNotSwipe] = useState(false);
-
-    const toggleSwipping = () => {
-        setShouldNotSwipe(!shouldNotSwipe);
-    }
-
-    const params = {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 1,
-        loop: true,
-
-        loopFillGroupWithBlank: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        }
-    }
-    // const handleScroll = () => {
-    //     const position = window.pageXOffset;
-    //     console.log(position);
-    //     // setScrollPosition(position);
-    // };
-
-    // useEffect(() => {
-    //     window.addEventListener('scroll', handleScroll, { passive: true });
-
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
-
-    let previousSlide = () => {
-        if (current === 0) setCurrent(slides.length - 1);
-        else setCurrent(current - 1);
-    };
-
-    let nextSlide = () => {
-        if (current === slides.length - 1) setCurrent(0);
-        else setCurrent(current + 1);
-    };
-
-    let handleOnScroll = () => {
-        console.log("scroll");
-        // setCurrent(1);
-    };
 
     return (
         <div className="self-stretch mt-9 pr-6 max-md:max-w-full max-md:pr-5 overflow-hidden">
