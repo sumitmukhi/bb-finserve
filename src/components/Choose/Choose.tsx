@@ -6,7 +6,7 @@ import { Cards } from ".";
 export const Choose = (): JSX.Element => {
     return (
         <section id="choose" className="relative">
-            <div className="w-full text-white text-center [font-family:'General_Sans-Bold'] text-3xl max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap w-[60%] m-auto mt-16 pt-16 max-md:mt-10 border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1]">
+            <div className="w-full text-white text-center [font-family:'General_Sans-Bold'] text-3xl max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap !w-[60%] m-auto mt-16 pt-16 max-md:mt-10 border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1]">
                 Why Choose Us
             </div>
             <PropertyDefaultWrapper

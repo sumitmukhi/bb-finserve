@@ -4,7 +4,7 @@ import React from "react";
 export const Contact = (): JSX.Element => {
     return (
         <div>
-            <section id="contact" className="self-stretch flex min-h-[96px] w-full flex-col mt-36 max-sm:mt-10 max-sm:min-h-[26px] w-[60%] m-auto border-t-white border-t-opacity-0 border-t border-solid max-md:max-w-full border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1]" />{" "}
+            <section id="contact" className="self-stretch flex min-h-[96px] w-full flex-col mt-36 max-sm:mt-10 max-sm:min-h-[26px] !w-[60%] m-auto border-t-white border-t-opacity-0 border-t border-solid max-md:max-w-full border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1]" />{" "}
             <div className="text-white text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10">
                 IN Partnership With
             </div>{" "}
