@@ -55,8 +55,8 @@ export const Cards = (): JSX.Element => {
                         <div className="flex flex-row items-stretch w-[82%] max-md:w-full max-md:ml-0 gap-5">
 
                             <div
-                            onMouseEnter={() => setCurrent(0)}
-                            onMouseLeave={() => setCurrent(0)}
+                            onTouchStart={() => setCurrent(0)}
+                            onTouchEnd={() => setCurrent(0)}
                             className="items-center border flex w-full max-w-[321px] ml-5 grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                                 <img
                                     loading="lazy"
@@ -74,8 +74,8 @@ export const Cards = (): JSX.Element => {
                             </div>
 
                             <div
-                            onMouseEnter={() => setCurrent(1)}
-                            onMouseLeave={() => setCurrent(1)}
+                            onTouchStart={() => setCurrent(1)}
+                            onTouchEnd={() => setCurrent(1)}
                             id="item2" className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                                 <img
                                     loading="lazy"
@@ -94,8 +94,8 @@ export const Cards = (): JSX.Element => {
 
                             <div className="flex flex-col items-stretch w-[82%] max-md:w-full max-md:ml-0">
                                 <div
-                                onMouseEnter={() => setCurrent(2)}
-                                onMouseLeave={() => setCurrent(2)}
+                                onTouchStart={() => setCurrent(2)}
+                                onTouchEnd={() => setCurrent(2)}
                                 className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                                     <img
                                         loading="lazy"
@@ -115,8 +115,8 @@ export const Cards = (): JSX.Element => {
 
                             <div className="flex flex-col items-stretch w-[82%] max-md:w-full max-md:ml-0">
                                 <div
-                                onMouseEnter={() => setCurrent(3)}
-                                onMouseLeave={() => setCurrent(3)}
+                                onTouchStart={() => setCurrent(3)}
+                                onTouchEnd={() => setCurrent(3)}
                                 className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                                     <img
                                         loading="lazy"
