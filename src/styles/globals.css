@@ -141,7 +141,20 @@ img {
   display: none;
 }
 
-#item2:hover ~ #circle1{
-  /* @apply bg-white w-3 h-3 mt-[6px] */
-  /* display:none; */
-}
+/* .swiper-slide-content{
+  width: fit-content !important;
+  margin-right: 10px !important;
+ } */
+
+ .swiper{
+  @apply !pb-[70px]
+ }
+
+ .swiper-pagination-bullet{
+    @apply !w-2 !h-2 !bg-gray-500 !mb-[2px];
+    opacity: 1 !important;
+ }
+
+ .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  @apply !bg-white !w-3 !h-3 !mb-[0px];
+ }
