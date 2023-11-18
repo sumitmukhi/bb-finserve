@@ -63,7 +63,7 @@ export const Policy = (): JSX.Element => {
                 <div className="flex flex-col grow shrink-0 basis-auto flex-1 max-md:max-w-full w-1/2">
                     <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
                         <div className="items-start self-stretch flex w-full justify-between gap-5 max-md:flex-wrap">
-                            <div className="self-stretch flex items-start justify-between gap-4">
+                            <div className="self-stretch flex items-start justify-between gap-4 max-sm:w-[250px]">
                                 <img
                                     loading="lazy"
                                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/01be8c64-61f2-4a61-b105-ee20bae0c348?apiKey=54f59c00fe214313b710779cabd91fdd&"
