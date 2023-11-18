@@ -1,5 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 export const Cards = (): JSX.Element => {
 
@@ -7,19 +9,19 @@ export const Cards = (): JSX.Element => {
 
     let [current, setCurrent] = useState(0);
     const [scrollPosition, setScrollPosition] = useState(0);
-    const handleScroll = () => {
-        const Element = document.getElementById('carouselScroll')
-        const position = window.pageYOffset;
-        setScrollPosition(position);
-    };
+    // const handleScroll = () => {
+    //     const position = window.pageXOffset;
+    //     console.log(position);
+    //     // setScrollPosition(position);
+    // };
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll, { passive: true });
+    // useEffect(() => {
+    //     window.addEventListener('scroll', handleScroll, { passive: true });
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
 
     let previousSlide = () => {
         if (current === 0) setCurrent(slides.length - 1);
@@ -38,16 +40,26 @@ export const Cards = (): JSX.Element => {
 
     return (
         <div className="self-stretch mt-9 pr-6 max-md:max-w-full max-md:pr-5 overflow-hidden">
-
+            {/* <Swiper
+                spaceBetween={50}
+                slidesPerView={3}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+            >
+                <SwiperSlide></SwiperSlide>
+                <SwiperSlide>Slide 2</SwiperSlide>
+                <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide>Slide 4</SwiperSlide>
+            </Swiper> */}
 
             {/*  */}
 
             <div id="carouselScroll" className="carousel relative shadow-2xl overflow-auto">
                 <div className="carousel-inner relative w-full flex transition ease-out duration-40"
-                    // style={{
-                    //     transform: `translateX(-${current * 90}%)`,
-                    // }}
-                    >
+                // style={{
+                //     transform: `translateX(-${current * 90}%)`,
+                // }}
+                >
                     {/* <!--Slide 1--> */}
                     {/* <input className="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" /> */}
                     <div className="carousel-item static opacity-100 h-full">
@@ -55,9 +67,9 @@ export const Cards = (): JSX.Element => {
                         <div className="flex flex-row items-stretch w-[82%] max-md:w-full max-md:ml-0 gap-5">
 
                             <div
-                            onTouchStart={() => setCurrent(0)}
-                            onTouchEnd={() => setCurrent(0)}
-                            className="items-center border flex w-full max-w-[321px] ml-5 grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
+                                onPointerEnter={() => setCurrent(0)}
+                                onPointerLeave={() => setCurrent(0)}
+                                className="items-center border flex w-full max-w-[321px] ml-5 grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                                 <img
                                     loading="lazy"
                                     srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&"
@@ -74,9 +86,9 @@ export const Cards = (): JSX.Element => {
                             </div>
 
                             <div
-                            onTouchStart={() => setCurrent(1)}
-                            onTouchEnd={() => setCurrent(1)}
-                            id="item2" className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
+                                onPointerEnter={() => setCurrent(1)}
+                                onPointerLeave={() => setCurrent(1)}
+                                id="item2" className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                                 <img
                                     loading="lazy"
                                     srcSet="/img/kjdfhldfesbghj-1.png"
@@ -94,9 +106,9 @@ export const Cards = (): JSX.Element => {
 
                             <div className="flex flex-col items-stretch w-[82%] max-md:w-full max-md:ml-0">
                                 <div
-                                onTouchStart={() => setCurrent(2)}
-                                onTouchEnd={() => setCurrent(2)}
-                                className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
+                                    onPointerEnter={() => setCurrent(2)}
+                                    onPointerLeave={() => setCurrent(2)}
+                                    className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                                     <img
                                         loading="lazy"
                                         srcSet="/img/toto97-1.png"
@@ -115,9 +127,9 @@ export const Cards = (): JSX.Element => {
 
                             <div className="flex flex-col items-stretch w-[82%] max-md:w-full max-md:ml-0">
                                 <div
-                                onTouchStart={() => setCurrent(3)}
-                                onTouchEnd={() => setCurrent(3)}
-                                className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
+                                    onPointerEnter={() => setCurrent(3)}
+                                    onPointerLeave={() => setCurrent(3)}
+                                    className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                                     <img
                                         loading="lazy"
                                         srcSet="/img/wepik-export-20231010113226nog9-1.png"
