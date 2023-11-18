@@ -7,50 +7,17 @@ export const Cards = (): JSX.Element => {
 
     let [current, setCurrent] = useState(0);
     const [scrollPosition, setScrollPosition] = useState(0);
-    // const handleScroll = (scrolled: any) => {
-    //     // const position = window.pageXOffset;
-    //     // console.log(position);
-
-    //     console.log(scrolled);
-    //     setScrollPosition(scrolled);
-    // };
-    const scrollThreshold = 200;
+    const handleScroll = () => {
+        const Element = document.getElementById('carouselScroll')
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+    };
 
     useEffect(() => {
-        // const element = document.getElementById('carouselScroll');
-        // const element = document.getElementById('carouselScroll');
-        // const winScroll =
-        //     element? document.body.scrollLeft || element?.scrollWidth : 0
-
-        // const width = element?
-        //     element.scrollWidth -
-        //     element.clientWidth : 0
-
-        // const scrolled = winScroll / width;
-        // // console.log(scrolled);
-        // element?.addEventListener('scroll', () => {handleScroll(scrolled) }, { passive: true });
-
-        // return () => {
-        //     element?.removeEventListener('scroll', handleScroll);
-        // };
-        const element = document.getElementById('carouselScroll');
-        const handleScroll = () => {
-            const winScroll =
-            element? document.body.scrollLeft || element?.scrollWidth : 0
-
-        const width = element?
-            element.scrollWidth -
-            element.clientWidth : 0
-
-        const scrolled = winScroll / width;
-        // console.log(scrolled);
-            setScrollPosition(scrolled);
-        };
-
-        element?.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll, { passive: true });
 
         return () => {
-            element?.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
@@ -73,20 +40,24 @@ export const Cards = (): JSX.Element => {
         <div className="self-stretch mt-9 pr-6 max-md:max-w-full max-md:pr-5 overflow-hidden">
 
 
-            <h2>{scrollPosition}</h2>
+            {/*  */}
 
             <div id="carouselScroll" className="carousel relative shadow-2xl overflow-auto">
                 <div className="carousel-inner relative w-full flex transition ease-out duration-40"
-                    style={{
-                        transform: `translateX(-${current * 90}%)`,
-                    }}>
+                    // style={{
+                    //     transform: `translateX(-${current * 90}%)`,
+                    // }}
+                    >
                     {/* <!--Slide 1--> */}
                     {/* <input className="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" /> */}
                     <div className="carousel-item static opacity-100 h-full">
                         {/* <div className="block h-full w-full text-white text-5xl text-center">Slide 1</div> */}
                         <div className="flex flex-row items-stretch w-[82%] max-md:w-full max-md:ml-0 gap-5">
 
-                            <div className="items-center border flex w-full max-w-[321px] ml-5 grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
+                            <div
+                            onMouseEnter={() => setCurrent(0)}
+                            onMouseLeave={() => setCurrent(0)}
+                            className="items-center border flex w-full max-w-[321px] ml-5 grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                                 <img
                                     loading="lazy"
                                     srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&"
@@ -102,7 +73,10 @@ export const Cards = (): JSX.Element => {
                                 </div>
                             </div>
 
-                            <div className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
+                            <div
+                            onMouseEnter={() => setCurrent(1)}
+                            onMouseLeave={() => setCurrent(1)}
+                            id="item2" className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                                 <img
                                     loading="lazy"
                                     srcSet="/img/kjdfhldfesbghj-1.png"
@@ -119,7 +93,10 @@ export const Cards = (): JSX.Element => {
                             </div>
 
                             <div className="flex flex-col items-stretch w-[82%] max-md:w-full max-md:ml-0">
-                                <div className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
+                                <div
+                                onMouseEnter={() => setCurrent(2)}
+                                onMouseLeave={() => setCurrent(2)}
+                                className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                                     <img
                                         loading="lazy"
                                         srcSet="/img/toto97-1.png"
@@ -137,7 +114,10 @@ export const Cards = (): JSX.Element => {
                             </div>
 
                             <div className="flex flex-col items-stretch w-[82%] max-md:w-full max-md:ml-0">
-                                <div className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
+                                <div
+                                onMouseEnter={() => setCurrent(3)}
+                                onMouseLeave={() => setCurrent(3)}
+                                className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
                                     <img
                                         loading="lazy"
                                         srcSet="/img/wepik-export-20231010113226nog9-1.png"
@@ -276,6 +256,7 @@ export const Cards = (): JSX.Element => {
                                 setCurrent(i);
                             }}
                             key={"circle" + i}
+                            id={"circle" + i}
                             className={`rounded-full w-2 h-2 mt-2 cursor-pointer  ${i == current ? "bg-white w-3 h-3 mt-[6px]" : "bg-gray-500"
                                 }`}
                         ></div>
