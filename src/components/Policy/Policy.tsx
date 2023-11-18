@@ -76,7 +76,7 @@ export const Policy = (): JSX.Element => {
                             <img
                                 loading="lazy"
                                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/41546136-2f95-4000-997c-1ebda12426ba?apiKey=54f59c00fe214313b710779cabd91fdd&"
-                                className="aspect-square object-contain object-center w-6 overflow-hidden self-center max-w-full my-auto absolute right-[42px]"
+                                className="aspect-square object-contain object-center w-6 overflow-hidden self-center max-w-full my-auto max-sm:absolute max-sm:right-[42px]"
                             />
                         </div>
                     </div>
