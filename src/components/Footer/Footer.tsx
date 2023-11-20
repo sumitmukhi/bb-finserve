@@ -34,8 +34,8 @@ export const Footer = (): JSX.Element => {
                     className="aspect-[3.26] object-contain object-center w-[62px] overflow-hidden max-w-full mt-14 self-end max-md:mt-10"
                 /> */}
                 <div className="relative object-contain object-center w-[130px] mt-14 flex flex-wrap gap-3 self-end">
-                    <a href=""><img className="w-[8px] h-[15px]" alt="Facebook" src="/img/facebook.svg" /></a>
-                    <a href=""><img className="w-[15px] h-[12px]" alt="Twitter" src="/img/twitter.svg" /></a>
+                    <a href="https://www.facebook.com/blackbucklogistics"><img className="w-[8px] h-[15px]" alt="Facebook" src="/img/facebook.svg" /></a>
+                    <a href="https://twitter.com/blackbuck"><img className="w-[15px] h-[12px]" alt="Twitter" src="/img/twitter.svg" /></a>
                     <a href=""><img className="w-[15px] h-[15px]" alt="Instagram" src="/img/instagram.svg" /></a>
                     <a href=""><div className="relative w-[15px] h-[14px] bg-[url(/img/linkedin.svg)] bg-[100%_100%]" /></a>
                     <a href=""><div className="relative w-[17px] h-[12px] left-px bg-[url(/img/youtube.svg)] bg-[100%_100%]" /></a>
@@ -46,7 +46,7 @@ export const Footer = (): JSX.Element => {
                     Copyright © Zinka Logistics Solutions Pvt. Ltd.
                 </div>{" "}
                 <div className="text-neutral-500 text-sm self-stretch whitespace-nowrap">
-                    All Rights Reserved | Terms and Conditions | Privacy Policy
+                    All Rights Reserved | <a href="https://blackbuck.com/terms-and-conditions.php">Terms and Conditions</a> | <a href="https://blackbuck.com/terms-and-conditions.php" target="_blank">Privacy Policy</a>
                 </div>
             </div>
         </div>
