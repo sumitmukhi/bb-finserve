@@ -11,22 +11,22 @@ export const Footer = (): JSX.Element => {
                     className="aspect-[2.23] object-contain object-center w-[174px] overflow-hidden max-w-full self-end"
                 />{" "}
                 <div className="flex w-[604px] max-w-full max-sm:flex-col items-start justify-between gap-5 max-sm:mt-5 mt-16 self-end max-md:flex-wrap max-md:justify-center max-md:mt-10">
-                    <div className="text-white text-sm max-sm:text-base font-medium self-start">
+                    <a href="#home"><div className="text-white text-sm max-sm:text-base font-medium self-start">
                         Home
-                    </div>{" "}
-                    <div className="text-white text-center text-sm max-sm:text-base font-medium self-start">
+                    </div></a>{" "}
+                    <a href="#offer"><div className="text-white text-center text-sm max-sm:text-base font-medium self-start">
                         What We Offer
-                    </div>{" "}
-                    <div className="text-white text-sm max-sm:text-base font-medium">Why Choose Us</div>{" "}
-                    <div className="text-white text-sm max-sm:text-base font-medium self-start">
+                    </div></a>{" "}
+                    <a href="#choose"><div className="text-white text-sm max-sm:text-base font-medium">Why Choose Us</div></a>{" "}
+                    <a href="#policy"><div className="text-white text-sm max-sm:text-base font-medium self-start">
                         Policies
-                    </div>{" "}
-                    <div className="text-white text-sm max-sm:text-base font-medium self-start">
+                    </div></a>{" "}
+                    <a href="#about"><div className="text-white text-sm max-sm:text-base font-medium self-start">
                         About Us
-                    </div>{" "}
-                    <div className="text-white text-sm max-sm:text-base font-medium whitespace-nowrap self-start">
+                    </div></a>{" "}
+                    <a href="#contact"><div className="text-white text-sm max-sm:text-base font-medium whitespace-nowrap self-start">
                         Contact
-                    </div>
+                    </div></a>
                 </div>{" "}
                 {/* <img
                     loading="lazy"
