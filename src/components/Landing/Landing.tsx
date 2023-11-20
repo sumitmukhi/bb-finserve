@@ -41,11 +41,11 @@ export const Landing = (): JSX.Element => {
                     </div>
                 </div>
             </div>
-            <div className="absolute lg:block w-full h-[300px] max-sm:h-[440px] bottom-0 max-sm:top-[230px] z-[1]">
-                <div className="w-full h-[300px] max-sm:h-[440px] [background:linear-gradient(0deg,rgb(11,15,16)_40%,rgba(11,15,16,0)_100%)]" />
+            <div className="absolute lg:block w-full lg:h-[300px] max-sm:h-[300px] bottom-0 max-sm:bottom-[100px] max-sm:top-[230px] z-[1]">
+                <div className="w-full lg:h-[300px] max-sm:h-[300px] [background:linear-gradient(0deg,rgb(11,15,16)_40%,rgba(11,15,16,0)_100%)]" />
             </div>
             <div className="self-stretch z-[1] flex w-full w-[60%] m-auto pt-0 max-sm:pt-12 flex-col pb-16 px-20 max-md:max-w-full max-md:px-5">
-                <div className="justify-center items-center animate-bounce border self-center z-[1] flex w-12 max-w-full -m-8 flex-col p-2 rounded-[100px] border border-solid border-[rgba(255,255,255,0.26)] [background:linear-gradient(90deg,rgba(255,255,255,0.2)_0%,rgba(255,255,255,0)_100%)]">
+                <div className="justify-center items-center lg:animate-bounce border self-center z-[1] flex w-12 max-w-full -m-8 flex-col p-2 rounded-[100px] border border-solid border-[rgba(255,255,255,0.26)] [background:linear-gradient(90deg,rgba(255,255,255,0.2)_0%,rgba(255,255,255,0)_100%)]">
                     <a href="#offer">
                         <KeyboardArrowDown className="!relative !w-[32px] !h-[32px]" color="white" />
                     </a>
