@@ -5,7 +5,7 @@ export const Offer = (): JSX.Element => {
     return (
         <section id="offer" className="relative self-stretch flex w-full flex-col pt-24 pb-20 px-20 max-sm:pt-[34px] max-sm:pb-0 max-md:max-w-full max-md:px-5  backdrop-blur-[80px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(80px)_brightness(100%)] [background:linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0)_100%)] offer-card">
             <div className="fixed hidden z-[1] lg:block w-[890px] h-[787px] top-[30px] left-[-500px] bg-[#002a38] rounded-[445px/393.5px] rotate-180 blur-[300px]" />
-            <div className="absolute hidden max-sm:block w-[282px] h-[787px] top-[10px] left-[-200px] bg-[#002a38] rounded-[624px] rotate-180 blur-[200px]" />
+            <div className="absolute hidden max-sm:block w-[282px] h-[787px] top-[10px] left-[-200px] bg-[#002a38] rounded-[624px] rotate-180 blur-[150px] opacity-100" />
             <div className=" relative self-center flex w-full max-w-[994px] flex-col max-md:max-w-full z-[2]">
                 <div className="text-white text-center text-3xl max-sm:text-2xl [font-family:'General_Sans-Bold'] font-bold leading-10 uppercase self-center whitespace-nowrap">
                     What We Offer
@@ -86,7 +86,7 @@ export const Offer = (): JSX.Element => {
                 </div>
             </div>
             <div className="fixed hidden lg:block w-[890px] h-[787px] top-[30px] right-[-500px] bg-[#002a38] rounded-[445px/393.5px] rotate-180 blur-[300px]" />
-            <div className="absolute hidden max-sm:block w-[282px] h-[787px] top-[10px] right-[-200px] bg-[#002a38] rounded-[624px] rotate-180 blur-[200px]" />
+            <div className="absolute hidden max-sm:block w-[282px] h-[787px] top-[10px] right-[-200px] bg-[#002a38] rounded-[624px] rotate-180 blur-[150px] opacity-100" />
         </section>
     );
 };
