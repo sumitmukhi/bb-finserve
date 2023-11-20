@@ -5,7 +5,7 @@ export const Offer = (): JSX.Element => {
     return (
         <section id="offer" className="relative self-stretch flex w-full flex-col pt-24 pb-20 px-20 max-sm:pt-[34px] max-sm:pb-0 max-md:max-w-full max-md:px-5  backdrop-blur-[80px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(80px)_brightness(100%)] [background:linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0)_100%)] offer-card">
             <div className="fixed hidden z-[1] lg:block w-[890px] h-[787px] top-[30px] left-[-500px] bg-[#002a38] rounded-[445px/393.5px] rotate-180 blur-[300px]" />
-            <div className="absolute hidden max-sm:block w-[282px] h-[787px] top-[10px] left-[-200px] bg-[#002a38] rounded-[624px] rotate-180 blur-[180px]" />
+            <div className="absolute hidden max-sm:block w-[282px] h-[787px] top-[10px] left-[-200px] bg-[#002a38] rounded-[624px] rotate-180 blur-[170px]" />
             <div className=" relative self-center flex w-full max-w-[994px] flex-col max-md:max-w-full z-[2]">
                 <div className="text-white text-center text-3xl max-sm:text-2xl [font-family:'General_Sans-Bold'] font-bold leading-10 uppercase self-center whitespace-nowrap">
                     What We Offer
@@ -27,7 +27,7 @@ export const Offer = (): JSX.Element => {
                         </div>
                         <div className="flex flex-col items-stretch w-6/12 ml-5 max-md:w-full max-md:ml-0">
                             <div className="flex grow flex-col max-md:max-w-full max-md:mt-8 max-sm:mt-[16px]">
-                                <div className="border self-stretch pl-7 pr-5 py-6 rounded-3xl border-solid border-white border-opacity-20 max-md:max-w-full max-md:pl-5 max-sm:p-4 border-solid border-[#ffffff33] [background:linear-gradient(90deg,rgba(56,105,105,0.36)_0%,rgba(141.31,255,255,0.06)_97.47%)]">
+                                <div className="border self-stretch pl-7 pr-5 z-[1] py-6 rounded-3xl border-solid border-white border-opacity-20 max-md:max-w-full max-md:pl-5 max-sm:p-4 border-solid border-[#ffffff33] [background:linear-gradient(90deg,rgba(56,105,105,0.36)_0%,rgba(141.31,255,255,0.06)_97.47%)]">
                                     <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0 max-sm:flex-row">
                                         <div className="flex flex-col items-stretch w-[32%] max-sm:w-[25%] max-md:w-full max-md:ml-0">
                                             <img
@@ -48,7 +48,7 @@ export const Offer = (): JSX.Element => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="border self-stretch mt-12 max-sm:mt-[16px] pl-6 pr-20 pt-1 pb-6 rounded-3xl border-solid border-white border-opacity-20 max-md:max-w-full max-md:px-5 max-sm:p-5 border-solid border-[#ffffff33] [background:linear-gradient(90deg,rgba(56,105,105,0.36)_0%,rgba(141.31,255,255,0.06)_97.47%)]">
+                                <div className="border self-stretch mt-12 z-[1] max-sm:mt-[16px] pl-6 pr-20 pt-1 pb-6 rounded-3xl border-solid border-white border-opacity-20 max-md:max-w-full max-md:px-5 max-sm:p-5 border-solid border-[#ffffff33] [background:linear-gradient(90deg,rgba(56,105,105,0.36)_0%,rgba(141.31,255,255,0.06)_97.47%)]">
                                     <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0 max-sm:flex-row">
                                         <div className="flex flex-col items-stretch w-[39%] max-sm:w-[25%] max-md:w-full max-md:ml-0">
                                             <img
@@ -64,7 +64,7 @@ export const Offer = (): JSX.Element => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="border self-stretch mt-12 max-sm:mt-[16px] pl-7 pr-5 pt-5 pb-8 rounded-3xl border-solid border-white border-opacity-20 max-md:max-w-full max-md:pl-5 max-sm:p-4 border-solid border-[#ffffff33] [background:linear-gradient(90deg,rgba(56,105,105,0.36)_0%,rgba(141.31,255,255,0.06)_97.47%)]">
+                                <div className="border self-stretch mt-12 z-[1] max-sm:mt-[16px] pl-7 pr-5 pt-5 pb-8 rounded-3xl border-solid border-white border-opacity-20 max-md:max-w-full max-md:pl-5 max-sm:p-4 border-solid border-[#ffffff33] [background:linear-gradient(90deg,rgba(56,105,105,0.36)_0%,rgba(141.31,255,255,0.06)_97.47%)]">
                                     <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0 max-sm:flex-row">
                                         <div className="flex flex-col items-stretch w-[31%] max-sm:w-[25%] max-md:w-full max-md:ml-0">
                                             <img
@@ -86,7 +86,7 @@ export const Offer = (): JSX.Element => {
                 </div>
             </div>
             <div className="fixed hidden lg:block w-[890px] h-[787px] top-[30px] right-[-500px] bg-[#002a38] rounded-[445px/393.5px] rotate-180 blur-[300px]" />
-            <div className="absolute hidden max-sm:block w-[282px] h-[787px] top-[10px] right-[-200px] bg-[#002a38] rounded-[624px] rotate-180 blur-[180px]" />
+            <div className="absolute hidden max-sm:block w-[282px] h-[787px] top-[10px] right-[-200px] bg-[#002a38] rounded-[624px] rotate-180 blur-[170px]" />
         </section>
     );
 };
