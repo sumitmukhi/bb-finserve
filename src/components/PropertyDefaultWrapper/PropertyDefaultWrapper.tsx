@@ -1,8 +1,3 @@
-/*
-We're constantly improving the code you see. 
-Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
-*/
-
 import PropTypes from "prop-types";
 import React from "react";
 import { useReducer } from "react";
@@ -39,6 +34,7 @@ export const PropertyDefaultWrapper = ({
 }: Props): JSX.Element => {
   const [state, dispatch] = useReducer(reducer, {
     property1: property1 || "default",
+    fadeClass: ""
   });
 
   return (
@@ -59,9 +55,8 @@ export const PropertyDefaultWrapper = ({
           }}
         >
           <div
-            className={`left-[38px] top-0 absolute ${state.property1 === "default" ? "w-[341px]" : "w-[339px]"} ${
-              state.property1 === "default" ? "h-[88px]" : "h-[32px]"
-            }`}
+            className={`left-[38px] top-0 absolute ${state.property1 === "default" ? "w-[341px]" : "w-[339px]"} ${state.property1 === "default" ? "h-[88px]" : "h-[32px]"
+              }`}
           >
             <p className="[font-family:'General_Sans-Semibold',Helvetica] w-[337px] left-0 tracking-[0] text-[24px] top-0 text-white font-normal leading-[normal] absolute">
               Loan Disbursal in 48 Hours
@@ -73,15 +68,13 @@ export const PropertyDefaultWrapper = ({
             )}
           </div>
           <div
-            className={`w-[6px] left-0 top-0 rounded-[10px] absolute ${
-              state.property1 === "default" ? "h-[88px]" : "h-[32px]"
-            } ${state.property1 === "default" ? "bg-[#14dfdf]" : "bg-[#5d727f]"}`}
+            className={`w-[6px] left-0 top-0 rounded-[10px] absolute ${state.property1 === "default" ? "h-[88px]" : "h-[32px]"
+              } ${state.property1 === "default" ? "bg-[#14dfdf]" : "bg-[#5d727f]"}`}
           />
         </div>
         <div
-          className={`relative cursor-pointer ${state.property1 === "variant-2" ? "w-[379px]" : "w-[377px]"} ${
-            state.property1 === "variant-2" ? "mr-[-4.00px]" : "mr-[-2.00px]"
-          } ${state.property1 === "variant-2" ? "h-[88px]" : "h-[32px]"}`}
+          className={`relative cursor-pointer ${state.property1 === "variant-2" ? "w-[379px]" : "w-[377px]"} ${state.property1 === "variant-2" ? "mr-[-4.00px]" : "mr-[-2.00px]"
+            } ${state.property1 === "variant-2" ? "h-[88px]" : "h-[32px]"}`}
           onClick={() => {
             dispatch("click");
           }}
@@ -99,15 +92,13 @@ export const PropertyDefaultWrapper = ({
           )}
 
           <div
-            className={`w-[6px] left-0 top-0 rounded-[10px] absolute ${
-              state.property1 === "variant-2" ? "h-[88px]" : "h-[32px]"
-            } ${state.property1 === "variant-2" ? "bg-[#14dfdf]" : "bg-[#5d727f]"}`}
+            className={`w-[6px] left-0 top-0 rounded-[10px] absolute ${state.property1 === "variant-2" ? "h-[88px]" : "h-[32px]"
+              } ${state.property1 === "variant-2" ? "bg-[#14dfdf]" : "bg-[#5d727f]"}`}
           />
         </div>
         <div
-          className={`relative cursor-pointer ${state.property1 === "variant-3" ? "w-[379px]" : "w-[377px]"} ${
-            state.property1 === "variant-3" ? "mr-[-4.00px]" : "mr-[-2.00px]"
-          } ${state.property1 === "variant-3" ? "h-[88px]" : "h-[32px]"}`}
+          className={`relative cursor-pointer ${state.property1 === "variant-3" ? "w-[379px]" : "w-[377px]"} ${state.property1 === "variant-3" ? "mr-[-4.00px]" : "mr-[-2.00px]"
+            } ${state.property1 === "variant-3" ? "h-[88px]" : "h-[32px]"}`}
           onClick={() => {
             dispatch("click_270");
           }}
@@ -125,15 +116,13 @@ export const PropertyDefaultWrapper = ({
           )}
 
           <div
-            className={`w-[6px] left-0 top-0 rounded-[10px] absolute ${
-              state.property1 === "variant-3" ? "h-[88px]" : "h-[32px]"
-            } ${state.property1 === "variant-3" ? "bg-[#14dfdf]" : "bg-[#5d727f]"}`}
+            className={`w-[6px] left-0 top-0 rounded-[10px] absolute ${state.property1 === "variant-3" ? "h-[88px]" : "h-[32px]"
+              } ${state.property1 === "variant-3" ? "bg-[#14dfdf]" : "bg-[#5d727f]"}`}
           />
         </div>
         <div
-          className={`relative cursor-pointer ${state.property1 === "variant-4" ? "w-[379px]" : "w-[377px]"} ${
-            state.property1 === "variant-4" ? "mr-[-4.00px]" : "mr-[-2.00px]"
-          } ${state.property1 === "variant-4" ? "h-[88px]" : "h-[32px]"}`}
+          className={`relative cursor-pointer ${state.property1 === "variant-4" ? "w-[379px]" : "w-[377px]"} ${state.property1 === "variant-4" ? "mr-[-4.00px]" : "mr-[-2.00px]"
+            } ${state.property1 === "variant-4" ? "h-[88px]" : "h-[32px]"}`}
           onClick={() => {
             dispatch("click_273");
           }}
@@ -151,13 +140,12 @@ export const PropertyDefaultWrapper = ({
           )}
 
           <div
-            className={`w-[6px] left-0 top-0 rounded-[10px] absolute ${
-              state.property1 === "variant-4" ? "h-[88px]" : "h-[32px]"
-            } ${state.property1 === "variant-4" ? "bg-[#14dfdf]" : "bg-[#5d727f]"}`}
+            className={`w-[6px] left-0 top-0 rounded-[10px] absolute ${state.property1 === "variant-4" ? "h-[88px]" : "h-[32px]"
+              } ${state.property1 === "variant-4" ? "bg-[#14dfdf]" : "bg-[#5d727f]"}`}
           />
         </div>
       </div>
-      <div className="w-[370px] left-[563px] top-0 h-[372px] rounded-[185.11px/185.78px] absolute">
+      <div className="w-[370px] left-[563px] top-0 h-[372px] rounded-[185.11px/185.78px] absolute offer-img">
         <div className="w-[370px] left-0 opacity-10 top-0 blur-[10px] h-[372px] rounded-[185.11px/185.78px] bg-[#8dffff] absolute" />
         {state.property1 === "default" && (
           <div className="absolute w-[278px] h-[304px] top-[15px] left-[46px]">
@@ -166,7 +154,7 @@ export const PropertyDefaultWrapper = ({
                 <div className="h-[234px] overflow-hidden">
                   <div className="w-[228px] h-[234px]">
                     <div className="h-[234px]">
-                      <div className="relative w-[227px] h-[234px]">
+                      <div className="relative w-[227px] h-[234px] fade-in">
                         <img
                           className="absolute w-[10px] h-[18px] top-[39px] left-[110px]"
                           alt="Rectangle"
@@ -251,43 +239,60 @@ export const PropertyDefaultWrapper = ({
           </div>
         )}
 
-        {["variant-2", "variant-3", "variant-4"].includes(state.property1) && (
+        {state.property1 === "variant-2" && (
+          <div className="fade-in-2" >
+            <img className="absolute transition-none w-[210px] left-[80px] top-[44px]  h-[284px]" alt="Kjdfhldfesbghj" src="/img/kjdfhldfesbghj-1.png" />
+          </div>
+        )}
+
+        {state.property1 === "variant-3" && (
+          <div className={`${state.fadeClass}`} >
+            <img className="absolute transition-none w-[282px] left-[44px] top-[58px]  h-[257px]" alt="Kjdfhldfesbghj" src="/img/toto97-1.png" />
+          </div>
+        )}
+
+        {state.property1 === "variant-4" && (
+          <div className={`${state.fadeClass}`} >
+            <img className="absolute transition-none w-[319px] left-[26px] top-[45px] object-cover h-[283px]" alt="Kjdfhldfesbghj" src="/img/wepik-export-20231010113226nog9-1.png"></img>
+          </div>
+        )}
+
+
+
+
+        {/* {["variant-2", "variant-3", "variant-4"].includes(state.property1) && (
           <img
-            className={`absolute ${
-              state.property1 === "variant-3"
+            className={`absolute transition-none ${state.property1 === "variant-3"
                 ? "w-[282px]"
                 : state.property1 === "variant-4"
-                ? "w-[319px]"
-                : "w-[210px]"
-            } ${
-              state.property1 === "variant-3"
+                  ? "w-[319px]"
+                  : "w-[210px]"
+              } ${state.property1 === "variant-3"
                 ? "left-[44px]"
                 : state.property1 === "variant-4"
-                ? "left-[26px]"
-                : "left-[80px]"
-            } ${
-              state.property1 === "variant-3"
+                  ? "left-[26px]"
+                  : "left-[80px]"
+              } ${state.property1 === "variant-3"
                 ? "top-[58px]"
                 : state.property1 === "variant-4"
-                ? "top-[45px]"
-                : "top-[44px]"
-            } ${state.property1 === "variant-4" ? "object-cover" : ""} ${
-              state.property1 === "variant-3"
+                  ? "top-[45px]"
+                  : "top-[44px]"
+              } ${state.property1 === "variant-4" ? "object-cover" : ""} ${state.property1 === "variant-3"
                 ? "h-[257px]"
                 : state.property1 === "variant-4"
-                ? "h-[283px]"
-                : "h-[284px]"
-            }`}
+                  ? "h-[283px]"
+                  : "h-[284px]"
+              }`}
             alt="Kjdfhldfesbghj"
             src={
               state.property1 === "variant-3"
                 ? "/img/toto97-1.png"
                 : state.property1 === "variant-4"
-                ? "/img/wepik-export-20231010113226nog9-1.png"
-                : "/img/kjdfhldfesbghj-1.png"
+                  ? "/img/wepik-export-20231010113226nog9-1.png"
+                  : "/img/kjdfhldfesbghj-1.png"
             }
           />
-        )}
+        )} */}
       </div>
     </div>
   );
@@ -332,26 +337,30 @@ function reducer(state: any, action: any) {
   switch (action) {
     case "mouse_enter":
       return {
+        ...state,
         property1: "variant-2",
+        fadeClass: "fade-in-2"
       };
 
-      case "mouse_enter_270":
-        return {
-          ...state,
-          property1: "variant-3",
-        };
-  
-      case "mouse_enter_273":
-        return {
-          ...state,
-          property1: "variant-4",
-        };
-  
-      case "mouse_enter_304":
-        return {
-          ...state,
-          property1: "default",
-        };
+    case "mouse_enter_270":
+      return {
+        ...state,
+        property1: "variant-3",
+        fadeClass: "fade-in-3"
+      };
+
+    case "mouse_enter_273":
+      return {
+        ...state,
+        property1: "variant-4",
+        fadeClass: "fade-in-4"
+      };
+
+    case "mouse_enter_304":
+      return {
+        ...state,
+        property1: "default",
+      };
   }
 
   return state;
@@ -359,6 +368,7 @@ function reducer(state: any, action: any) {
 
 PropertyDefaultWrapper.propTypes = {
   property1: PropTypes.oneOf(["variant-4", "variant-2", "variant-3", "default"]),
+  fadeClass: PropTypes.string,
   rectangle: PropTypes.string,
   img: PropTypes.string,
   clipPathGroup: PropTypes.string,

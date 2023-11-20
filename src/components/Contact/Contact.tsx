@@ -5,10 +5,10 @@ export const Contact = (): JSX.Element => {
     return (
         <div>
             <section id="contact" className="self-stretch flex min-h-[96px] w-full flex-col mt-36 max-sm:mt-10 max-sm:min-h-[26px] !w-[60%] m-auto border-t-white border-t-opacity-0 border-t border-solid max-md:max-w-full border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1]" />{" "}
-            <div className="text-white text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10">
+            <div className="text-white text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10 max-sm:mt-[16px]">
                 IN Partnership With
             </div>{" "}
-            <div className="self-center flex w-full max-w-[971px] m-auto items-start justify-between gap-5 mt-5 px-5 max-md:max-w-full max-md:flex-wrap max-md:justify-center max-md:mt-10">
+            <div className="self-center flex w-full max-w-[971px] m-auto items-start justify-between gap-5 mt-5 px-5 max-md:max-w-full max-md:flex-wrap max-md:justify-center max-md:mt-10 max-sm:mt-[16px]">
                 <div className="absolute hidden md:block w-[437px] h-[129px] left-0 [background:linear-gradient(90deg,rgb(0,0,0)_29.69%,rgba(0,0,0,0)_100%)]" />
                 <img
                     loading="lazy"
@@ -18,21 +18,21 @@ export const Contact = (): JSX.Element => {
                 <img
                     loading="lazy"
                     srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/c9287fe8-751d-40f6-b352-d619efa09d87?apiKey=54f59c00fe214313b710779cabd91fdd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/c9287fe8-751d-40f6-b352-d619efa09d87?apiKey=54f59c00fe214313b710779cabd91fdd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c9287fe8-751d-40f6-b352-d619efa09d87?apiKey=54f59c00fe214313b710779cabd91fdd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/c9287fe8-751d-40f6-b352-d619efa09d87?apiKey=54f59c00fe214313b710779cabd91fdd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/c9287fe8-751d-40f6-b352-d619efa09d87?apiKey=54f59c00fe214313b710779cabd91fdd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c9287fe8-751d-40f6-b352-d619efa09d87?apiKey=54f59c00fe214313b710779cabd91fdd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/c9287fe8-751d-40f6-b352-d619efa09d87?apiKey=54f59c00fe214313b710779cabd91fdd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/c9287fe8-751d-40f6-b352-d619efa09d87?apiKey=54f59c00fe214313b710779cabd91fdd&"
-                    className="aspect-[2.33] object-contain object-center w-28 max-sm:w-[70px] max-sm:ml-[52px] overflow-hidden max-w-full self-start mt-10"
+                    className="aspect-[2.33] object-contain object-center w-28 max-sm:w-[70px] max-sm:ml-[25px] overflow-hidden max-w-full self-start mt-10"
                 />{" "}
                 <img
                     loading="lazy"
                     srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/e0517d37-63f5-448e-b9db-28b826ee217b?apiKey=54f59c00fe214313b710779cabd91fdd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e0517d37-63f5-448e-b9db-28b826ee217b?apiKey=54f59c00fe214313b710779cabd91fdd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e0517d37-63f5-448e-b9db-28b826ee217b?apiKey=54f59c00fe214313b710779cabd91fdd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e0517d37-63f5-448e-b9db-28b826ee217b?apiKey=54f59c00fe214313b710779cabd91fdd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e0517d37-63f5-448e-b9db-28b826ee217b?apiKey=54f59c00fe214313b710779cabd91fdd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e0517d37-63f5-448e-b9db-28b826ee217b?apiKey=54f59c00fe214313b710779cabd91fdd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e0517d37-63f5-448e-b9db-28b826ee217b?apiKey=54f59c00fe214313b710779cabd91fdd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e0517d37-63f5-448e-b9db-28b826ee217b?apiKey=54f59c00fe214313b710779cabd91fdd&"
-                    className="aspect-[3.19] object-contain object-center w-[153px] max-sm:w-[113px] overflow-hidden max-w-full self-start mt-10"
+                    className="aspect-[3.19] object-contain object-center w-[153px] max-sm:w-[113px] overflow-hidden max-w-full self-start mt-10 max-sm:mt-5"
                 />{" "}
                 <img
                     loading="lazy"
                     srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/2a5517f0-73ad-49de-806d-153516c34713?apiKey=54f59c00fe214313b710779cabd91fdd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/2a5517f0-73ad-49de-806d-153516c34713?apiKey=54f59c00fe214313b710779cabd91fdd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2a5517f0-73ad-49de-806d-153516c34713?apiKey=54f59c00fe214313b710779cabd91fdd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/2a5517f0-73ad-49de-806d-153516c34713?apiKey=54f59c00fe214313b710779cabd91fdd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/2a5517f0-73ad-49de-806d-153516c34713?apiKey=54f59c00fe214313b710779cabd91fdd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2a5517f0-73ad-49de-806d-153516c34713?apiKey=54f59c00fe214313b710779cabd91fdd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/2a5517f0-73ad-49de-806d-153516c34713?apiKey=54f59c00fe214313b710779cabd91fdd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/2a5517f0-73ad-49de-806d-153516c34713?apiKey=54f59c00fe214313b710779cabd91fdd&"
-                    className="aspect-[3.56] object-contain object-center w-[171px] max-sm:w-[101px] max-sm:ml-[35px] overflow-hidden max-w-full self-start mt-10"
+                    className="aspect-[3.56] object-contain object-center w-[171px] max-sm:w-[101px] max-sm:ml-[5px] overflow-hidden max-w-full self-start mt-10 max-sm:mt-5"
                 />
                 <div className="absolute hidden md:block w-[427px] h-[129px] right-0 rotate-180 [background:linear-gradient(90deg,rgb(0,0,0)_49.69%,rgba(0,0,0,0)_100%)]" />
             </div>{" "}
-            <div className="border self-center flex w-full max-w-[1200px] m-auto max-sm:mx-5 max-sm:p-10 max-sm:py-5 max-sm:mt-[100px] max-sm:w-auto flex-col mt-28 px-20 py-16 rounded-3xl border-solid border-white border-opacity-20 max-md:max-w-full max-md:mt-10 max-md:px-5 max-sm:px-5 border border-solid border-[#ffffff33] [background:linear-gradient(90deg,rgba(104,186,186,0.26)_0%,rgb(141.31,255,255,8%)_70.47%)]">
+            <div className="border self-center flex w-full max-w-[1200px] m-auto max-sm:mx-5 max-sm:p-10 max-sm:py-5 max-sm:mt-[60px] max-sm:w-auto flex-col mt-28 px-20 py-16 rounded-3xl border-solid border-white border-opacity-20 max-md:max-w-full max-md:mt-10 max-md:px-5 max-sm:px-5 border border-solid border-[#ffffff33] [background:linear-gradient(90deg,rgba(104,186,186,0.26)_0%,rgb(141.31,255,255,8%)_70.47%)]">
                 <div className="self-center flex w-[648px] max-w-full flex-col max-sm:pt-5">
                     <div className="text-white text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap">
                         Contact Us
