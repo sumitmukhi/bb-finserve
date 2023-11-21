@@ -3,11 +3,11 @@ import React from "react";
 
 export const Offer = (): JSX.Element => {
     return (
-        <section id="offer" className="relative self-stretch flex w-full flex-col pt-24 pb-20 px-20 max-sm:pt-[34px] max-sm:pb-0 max-md:max-w-full max-md:px-5  backdrop-blur-[80px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(80px)_brightness(100%)] [background:linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0)_100%)] offer-card">
+        <section id="offer" className="relative self-stretch flex w-full flex-col pt-24 max-sm:pt-0 pb-20 px-20 max-sm:pb-0 max-md:max-w-full max-md:px-5  backdrop-blur-[80px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(80px)_brightness(100%)] [background:linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0)_100%)] offer-card">
             <div className="fixed hidden z-[1] lg:block w-[890px] h-[787px] top-[30px] left-[-500px] bg-[#002a38] rounded-[445px/393.5px] rotate-180 blur-[300px]" />
             <div className="absolute hidden max-sm:block w-[282px] h-[787px] top-[10px] left-[-200px] bg-[#002a38] rounded-[624px] rotate-180 blur-[150px] opacity-30" />
             <div className=" relative self-center flex w-full max-w-[994px] flex-col max-md:max-w-full z-[2]">
-                <div className="text-white text-center text-3xl max-sm:text-2xl [font-family:'General_Sans-Bold'] font-bold leading-10 uppercase self-center whitespace-nowrap">
+                <div className="text-white text-center text-3xl max-sm:text-2xl [font-family:'General_Sans-Bold'] font-bold leading-10 uppercase self-center whitespace-nowrap max-sm:pt-[34px] max-sm:border-t-white max-sm:border-t-opacity-0 max-sm:border-t max-sm:border-transparent max-sm:[border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1]">
                     What We Offer
                 </div>
                 <div className="self-stretch mt-16 max-md:max-w-full max-md:mt-10 max-sm:mt-0">
@@ -42,7 +42,7 @@ export const Offer = (): JSX.Element => {
                                             /> */}
                                         </div>
                                         <div className="flex flex-col items-stretch w-[68%] max-sm:w-[72%] ml-5 max-md:w-full max-md:ml-0 max-sm:m-[0px]">
-                                            <div className="text-white text-2xl [font-family:'General_Sans-Regular'] max-sm:text-base max-sm:font-light max-sm:w-full max-sm:mt-3 max-sm:ml-5 font-medium w-[278px] max-w-[278px] my-auto max-md:mt-10 lg:mt-[-4px] max-sm:mt-[0px] max-sm:w-fit">
+                                            <div className="text-white text-2xl [font-family:'General_Sans-Regular'] max-sm:text-base max-sm:font-light max-sm:ml-5 font-medium w-[278px] max-w-[278px] my-auto max-md:mt-10 lg:mt-[-4px] max-sm:w-fit max-sm:mt-1">
                                                 Refinancing Services for Existing Commercial Vehicles
                                             </div>
                                         </div>
@@ -58,7 +58,7 @@ export const Offer = (): JSX.Element => {
                                             />
                                         </div>
                                         <div className="flex flex-col items-stretch w-[61%] max-sm:w-[75%] ml-5 max-md:w-full max-md:ml-0">
-                                            <div className="text-white text-2xl [font-family:'General_Sans-Regular'] max-sm:text-base max-sm:font-light max-sm:w-full max-sm:ml-5 font-medium w-[278px] max-w-[211px] my-auto max-md:mt-10 lg:mt-[25px] max-sm:my-[8px] max-sm:w-fit">
+                                            <div className="text-white text-2xl [font-family:'General_Sans-Regular'] max-sm:text-base max-sm:font-light max-sm:ml-5 font-medium w-[278px] max-w-[211px] my-auto max-md:mt-10 lg:mt-[25px] max-sm:my-[8px] max-sm:w-fit">
                                                 Loans with Balance Transfer options
                                             </div>
                                         </div>
@@ -74,7 +74,7 @@ export const Offer = (): JSX.Element => {
                                             />
                                         </div>
                                         <div className="flex flex-col items-stretch w-[69%] max-sm:w-[70%] ml-5 max-md:w-full max-md:ml-0">
-                                            <div className="text-white text-2xl [font-family:'General_Sans-Regular'] max-sm:text-base max-sm:font-light max-sm:w-full max-sm:ml-5 font-medium w-[278px] max-w-[278px] my-auto max-md:mt-10 lg:mt-[10px] max-sm:my-[8px]">
+                                            <div className="text-white text-2xl [font-family:'General_Sans-Regular'] max-sm:text-base max-sm:font-light max-sm:ml-5 font-medium w-[278px] max-w-[278px] my-auto max-md:mt-10 lg:mt-[10px] max-sm:w-fit max-sm:mt-2">
                                                 Loans even for First time buyer
                                             </div>
                                         </div>

@@ -36,9 +36,9 @@ export const Footer = (): JSX.Element => {
                 <div className="relative object-contain object-center w-[130px] mt-14 flex flex-wrap gap-3 self-end">
                     <a href="https://www.facebook.com/blackbucklogistics"><img className="w-[8px] h-[15px]" alt="Facebook" src="/img/facebook.svg" /></a>
                     <a href="https://twitter.com/blackbuck"><img className="w-[15px] h-[12px]" alt="Twitter" src="/img/twitter.svg" /></a>
-                    <a href=""><img className="w-[15px] h-[15px]" alt="Instagram" src="/img/instagram.svg" /></a>
-                    <a href=""><div className="relative w-[15px] h-[14px] bg-[url(/img/linkedin.svg)] bg-[100%_100%]" /></a>
-                    <a href=""><div className="relative w-[17px] h-[12px] left-px bg-[url(/img/youtube.svg)] bg-[100%_100%]" /></a>
+                    <a href="https://instagram.com/"><img className="w-[15px] h-[15px]" alt="Instagram" src="/img/instagram.svg" /></a>
+                    <a href="https://linkein.com/"><div className="relative w-[15px] h-[14px] bg-[url(/img/linkedin.svg)] bg-[100%_100%]" /></a>
+                    <a href="https://youtube.com/"><div className="relative w-[17px] h-[12px] left-px bg-[url(/img/youtube.svg)] bg-[100%_100%]" /></a>
                 </div>
             </div>{" "}
             <div className="self-center flex w-full max-w-[1352px] items-start justify-between gap-5 mt-16 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
