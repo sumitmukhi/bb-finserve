@@ -45,7 +45,7 @@ export const Footer = (): JSX.Element => {
                 <div className="text-neutral-500 text-sm self-stretch grow shrink basis-auto">
                     Copyright © Zinka Logistics Solutions Pvt. Ltd.
                 </div>{" "}
-                <div className="text-neutral-500 text-sm self-stretch whitespace-nowrap">
+                <div className="text-neutral-500 text-sm self-stretch whitespace-nowrap max-sm:whitespace-normal">
                     All Rights Reserved | <a href="https://blackbuck.com/terms-and-conditions.php">Terms and Conditions</a> | <a href="https://blackbuck.com/terms-and-conditions.php" target="_blank">Privacy Policy</a>
                 </div>
             </div>
