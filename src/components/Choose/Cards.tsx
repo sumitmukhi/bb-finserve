@@ -1,7 +1,7 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import Image from 'next/image';
+import { Pagination} from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -22,9 +22,12 @@ export const Cards = (): JSX.Element => {
                 <SwiperSlide>
                     <div
                         className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
-                        <img
+                        <Image
                             loading="lazy"
-                            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/9c558a9c-5db9-4ee0-87be-f33490d26038?apiKey=54f59c00fe214313b710779cabd91fdd&"
+                            src="/img/9c558a9c-5db9-4ee0-87be-f33490d26038.png"
+                            alt="Loan Disbursal in 48 Hours"
+                            width={152}
+                            height={100}
                             className="aspect-[0.97] object-contain object-center w-[152px] overflow-hidden self-center max-w-full"
                         />
                         <div className="justify-center items-center self-stretch flex flex-col mt-5">
@@ -39,11 +42,13 @@ export const Cards = (): JSX.Element => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
-                        <img
+                        <Image
                             loading="lazy"
-                            srcSet="/img/kjdfhldfesbghj-1.png"
-                            className="aspect-[0.97] object-contain object-center w-[152px] overflow-hidden self-center max-w-full"
-                        />
+                            src="/img/kjdfhldfesbghj-1.png"
+                            alt={"24x7 Customer Support"}
+                            width={152}
+                            height={100}
+                            className="aspect-[0.97] object-contain object-center w-[152px] overflow-hidden self-center max-w-full"                        />
                         <div className="justify-center items-center self-stretch flex flex-col mt-5">
                             <div className="text-white text-center text-xl font-semibold self-center whitespace-nowrap">
                                 24x7 Customer Support
@@ -56,9 +61,12 @@ export const Cards = (): JSX.Element => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
-                        <img
+                        <Image
                             loading="lazy"
-                            srcSet="/img/toto97-1.png"
+                            src="/img/toto97-1.png"
+                            alt="Quick & Easy Process"
+                            width={152}
+                            height={100}
                             className="aspect-[0.97] object-contain object-center w-[152px] overflow-hidden self-center max-w-full"
                         />
                         <div className="justify-center items-center self-stretch flex flex-col mt-5">
@@ -73,9 +81,12 @@ export const Cards = (): JSX.Element => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="items-center border flex w-full max-w-[321px] grow flex-col mx-auto pt-16 pb-10 px-10 rounded-3xl border-solid border-white border-opacity-20 max-md:mt-4 cards">
-                        <img
+                        <Image
                             loading="lazy"
-                            srcSet="/img/wepik-export-20231010113226nog9-1.png"
+                            src="/img/wepik-export-20231010113226nog9-1.png"
+                            alt="Help with Documentation"
+                            width={152}
+                            height={100}
                             className="aspect-[0.97] object-contain object-center w-[152px] overflow-hidden self-center max-w-full"
                         />
                         <div className="justify-center items-center self-stretch flex flex-col mt-5">

@@ -1,5 +1,6 @@
 
 import React from "react";
+import Image from 'next/image';
 import { KeyboardArrowDown } from "@/icons/KeyboardArrowDown";
 
 export const Landing = (): JSX.Element => {
@@ -10,16 +11,13 @@ export const Landing = (): JSX.Element => {
             </div>
             <div className="absolute w-[480px] h-[352px] top-[-100px] left-[-100px] bg-[#002a38] blur-[60px] hidden max-sm:block" />
             <div className="flex-col overflow-hidden max-sm:px-0 self-center relative flex min-h-[652px] w-full max-w-full mt-8 pt-96 pb-20 px-5 max-md:pt-24 max-sm:pt-10 max-sm:pb-0 max-sm:gap-0 max-sm:min-h-full">
-                <img
+                <Image
                     loading="lazy"
-                    srcSet="img/vikram-bawa-20221117-1028-pankaj-t-blackbuck-copy-1.png 100w, 
-                            img/vikram-bawa-20221117-1028-pankaj-t-blackbuck-copy-1.png 200w, 
-                            img/vikram-bawa-20221117-1028-pankaj-t-blackbuck-copy-1.png 400w, 
-                            img/vikram-bawa-20221117-1028-pankaj-t-blackbuck-copy-1.png 800w, 
-                            img/vikram-bawa-20221117-1028-pankaj-t-blackbuck-copy-1.png 1200w, 
-                            img/vikram-bawa-20221117-1028-pankaj-t-blackbuck-copy-1.png 1600w, 
-                            img/vikram-bawa-20221117-1028-pankaj-t-blackbuck-copy-1.png 2000w, 
-                            img/vikram-bawa-20221117-1028-pankaj-t-blackbuck-copy-1.png"
+                    src="/img/vikram-bawa-20221117-1028-pankaj-t-blackbuck-copy-1.png"
+                    alt="Pankaj Tripathy - Blackbuck Landing Page"
+                    width={647}
+                    height={652}
+                    priority
                     className="absolute min-h-[652px] max-sm:min-h-[352px] max-sm:mt-[50px] w-[647px] object-cover object-center inset-0 m-auto"
                 />
                 <div className="relative text-white text-center text-6xl max-sm:ml-0 z-[2] max-sm:z-[2] max-sm:w-full font-bold [font-family:'General_Sans-Bold',Helvetica] tracking-[1.50px] leading-[72px] uppercase self-stretch mr-0 -ml-9 max-md:max-w-full max-md:text-4xl max-sm:mt-[360px] max-sm:text-3xl">
