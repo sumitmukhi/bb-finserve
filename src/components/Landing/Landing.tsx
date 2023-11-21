@@ -42,7 +42,7 @@ export const Landing = (): JSX.Element => {
                 </div>
             </div>
             <div className="absolute lg:block w-full lg:h-[300px] max-sm:h-[480px] bottom-0 max-sm:top-[230px] max-sm:bottom-0 z-[1]">
-                <div className="w-full lg:h-[300px] max-sm:h-[480px] [background:linear-gradient(0deg,rgb(11,15,16)_40%,rgba(11,15,16,0)_100%)]" />
+                <div className="w-full lg:h-[300px] max-sm:h-[480px] [background:linear-gradient(0deg,rgb(11,15,16)_40%,rgba(11,15,16,0)_100%)] max-sm:[background:linear-gradient(0deg,rgb(11,11,11)_40%,rgba(11,11,11,0)_100%)]" />
             </div>
             <div className="self-stretch z-[1] flex w-full w-[60%] m-auto pt-0 max-sm:pt-12 flex-col pb-16 px-20 max-md:max-w-full max-md:px-5 ">
                 <div className="justify-center items-center lg:animate-bounce border self-center z-[1] flex w-12 max-w-full -m-8 flex-col p-2 rounded-[100px] border border-solid border-[rgba(255,255,255,0.26)] [background:linear-gradient(90deg,rgba(255,255,255,0.2)_0%,rgba(255,255,255,0)_100%)]">
