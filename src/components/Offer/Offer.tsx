@@ -5,7 +5,7 @@ export const Offer = (): JSX.Element => {
     return (
         <section id="offer" className="relative self-stretch flex w-full flex-col pt-24 max-sm:pt-0 pb-20 px-20 max-sm:pb-0 max-md:max-w-full max-md:px-5  backdrop-blur-[80px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(80px)_brightness(100%)] [background:linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0)_100%)] offer-card">
             <div className="fixed hidden z-[1] lg:block w-[890px] h-[787px] top-[30px] left-[-500px] bg-[#002a38] rounded-[445px/393.5px] rotate-180 blur-[300px]" />
-            <div className="absolute hidden max-sm:block w-[282px] h-[787px] top-[10px] left-[-200px] bg-[#002a38] rounded-[624px] rotate-180 blur-[150px] opacity-30" />
+            <div className="absolute hidden max-sm:block w-[282px] h-[787px] top-[10px] left-[-200px] bg-[#002a38] rounded-[624px] rotate-180 blur-[150px] opacity-50" />
             <div className=" relative self-center flex w-full max-w-[994px] flex-col max-md:max-w-full z-[2]">
                 <div className="text-white text-center text-3xl max-sm:text-2xl [font-family:'General_Sans-Bold'] font-bold leading-10 uppercase self-center whitespace-nowrap max-sm:pt-[34px] max-sm:border-t-white max-sm:border-t-opacity-0 max-sm:border-t max-sm:border-transparent max-sm:[border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1]">
                     What We Offer
@@ -33,7 +33,7 @@ export const Offer = (): JSX.Element => {
                                             <img
                                                 loading="lazy"
                                                 srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/23ef0778-9542-44e9-8f12-3387f688358b?apiKey=54f59c00fe214313b710779cabd91fdd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/23ef0778-9542-44e9-8f12-3387f688358b?apiKey=54f59c00fe214313b710779cabd91fdd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/23ef0778-9542-44e9-8f12-3387f688358b?apiKey=54f59c00fe214313b710779cabd91fdd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/23ef0778-9542-44e9-8f12-3387f688358b?apiKey=54f59c00fe214313b710779cabd91fdd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/23ef0778-9542-44e9-8f12-3387f688358b?apiKey=54f59c00fe214313b710779cabd91fdd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/23ef0778-9542-44e9-8f12-3387f688358b?apiKey=54f59c00fe214313b710779cabd91fdd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/23ef0778-9542-44e9-8f12-3387f688358b?apiKey=54f59c00fe214313b710779cabd91fdd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/23ef0778-9542-44e9-8f12-3387f688358b?apiKey=54f59c00fe214313b710779cabd91fdd&"
-                                                className="aspect-[1.41] object-contain object-center w-32 overflow-hidden max-w-full max-md:mt-10 max-sm:mt-[10px]"
+                                                className="aspect-[1.41] lg:aspect-[1.2] object-contain object-center w-32 overflow-hidden max-w-full max-md:mt-10 max-sm:mt-[10px]"
                                             />
                                             {/* <img
                                                 loading="lazy"
@@ -86,7 +86,7 @@ export const Offer = (): JSX.Element => {
                 </div>
             </div>
             <div className="fixed hidden lg:block w-[890px] h-[787px] top-[30px] right-[-500px] bg-[#002a38] rounded-[445px/393.5px] rotate-180 blur-[300px]" />
-            <div className="absolute hidden max-sm:block w-[282px] h-[787px] top-[10px] right-[-200px] bg-[#002a38] rounded-[624px] rotate-180 blur-[150px] opacity-30" />
+            <div className="absolute hidden max-sm:block w-[282px] h-[787px] top-[10px] right-[-200px] bg-[#002a38] rounded-[624px] rotate-180 blur-[150px] opacity-50" />
         </section>
     );
 };
