@@ -6,7 +6,7 @@ import { Cards } from ".";
 export const Choose = (): JSX.Element => {
     return (
         <section id="choose" className="relative">
-            <div className="w-full text-white text-center [font-family:'General_Sans-Bold'] text-3xl max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap !w-[60%] m-auto mt-16 pt-16 max-md:mt-10 max-sm:mt-[36px] max-sm:pt-[36px] border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1]">
+            <div className="w-full text-white text-center [font-family:'General_Sans-Bold'] text-3xl max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap !w-[60%] m-auto mt-16 pt-16 max-md:mt-10 max-sm:mt-[97px] max-sm:pt-[36px] border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1]">
                 Why Choose Us
             </div>
             <PropertyDefaultWrapper
@@ -30,7 +30,7 @@ export const Choose = (): JSX.Element => {
                 rectangle9="img/rectangle-24.png"
             />
 
-            <div className="hidden max-sm:block">
+            <div className="hidden max-sm:block max-sm:pb-[40px]">
                 <div className="absolute w-[430px] h-[243px] top-0 right-[-100px] bg-[#8dffff] rounded-[215px/121.5px] blur-[80px] opacity-10" />
 
                 <Cards />

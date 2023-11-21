@@ -4,8 +4,8 @@ import React from "react";
 export const About = (): JSX.Element => {
     return (
         <div >
-            <section id="about" className="self-stretch flex min-h-[97px] w-full flex-col mt-36 max-sm:min-h-[20px]  border-t-white border-t-opacity-0 border-t border-solid border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1] max-md:max-w-full max-md:mt-10 !w-[60%] m-auto" />
-            <div className="text-white text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10 max-sm:mt-[30px] max-sm:mb-[10px]">
+            <section id="about" className="self-stretch flex min-h-[97px] w-full flex-col mt-36 max-sm:min-h-[20px]  border-t-white border-t-opacity-0 border-t border-solid border-t-white border-t-opacity-0 border-t border-solid [border-image:linear-gradient(to_right,rgba(255,255,255,0),rgb(150,150,150)_49.4%,rgba(255,255,255,0)_100%)_1] max-md:max-w-full max-md:mt-10 max-sm:mt-[94px] !w-[60%] m-auto" />
+            <div className="text-white text-center text-3xl [font-family:'General_Sans-Bold'] max-sm:text-2xl font-bold uppercase self-center whitespace-nowrap max-md:mt-10 max-sm:mt-[26px] max-sm:mb-[10px]">
                 About Us
             </div>
             <div className="self-center w-full max-w-[1197px] max-sm:p-10 max-sm:pb-0 max-sm:pt-0 mt-16 max-md:max-w-full max-md:mt-10 max-sm:mt-0 m-auto">
