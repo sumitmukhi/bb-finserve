@@ -7,6 +7,14 @@ import Image from 'next/image';
 export const Policy = (): JSX.Element => {
 
     const [open, setOpen] = useState(false);
+    const [title, setTitle] = useState("");
+    const [file, setFile] = useState("");
+
+    const handleModalOpen = (title: React.SetStateAction<string>, file: React.SetStateAction<string>) => {
+        setOpen(true);
+        setTitle(title);
+        setFile(file);
+    }
 
     useEffect(() => {
         document.body.style.overflow = open ? "hidden" : "unset";
@@ -21,7 +29,7 @@ export const Policy = (): JSX.Element => {
             </div>
             <div className="self-center z-[1] flex w-full max-w-[1200px] items-start justify-between gap-5 mt-16 px-5 max-md:max-w-full max-md:flex-wrap max-md:mt-10 max-sm:mt-[36px] m-auto">
                 <div className="flex flex-col grow shrink-0 basis-auto flex-1 max-md:max-w-full w-1/2">
-                    <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full  [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
+                    <div onClick={() => handleModalOpen("Interest Rate Policy", "drylab.pdf")} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full  [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
                         <div className="items-start self-stretch flex w-full justify-between gap-5 max-md:flex-wrap">
                             <div className="self-stretch flex items-start justify-between gap-4">
                                 <Image
@@ -48,7 +56,7 @@ export const Policy = (): JSX.Element => {
                     </div>
                 </div>
                 <div className="flex flex-col grow shrink-0 basis-auto flex-1 max-md:max-w-full w-1/2">
-                    <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
+                    <div onClick={() => handleModalOpen("Gradation of Risk", "drylab.pdf")} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
                         <div className="items-start self-stretch flex w-full justify-between gap-5 max-md:flex-wrap">
                             <div className="self-stretch flex items-start justify-between gap-4">
                                 <Image
@@ -77,7 +85,7 @@ export const Policy = (): JSX.Element => {
             </div>
             <div className="self-center z-[1] flex w-full max-w-[1200px] items-start justify-between gap-5 mt-8 px-5 max-md:max-w-full max-md:flex-wrap m-auto max-sm:mt-5">
                 <div className="flex flex-col grow shrink-0 basis-auto flex-1 max-md:max-w-full w-1/2">
-                    <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
+                    <div onClick={() => handleModalOpen("MITC and Schedule of Charges", "drylab.pdf")} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
                         <div className="items-start self-stretch flex w-full justify-between gap-5 max-md:flex-wrap">
                             <div className="self-stretch flex items-start justify-between gap-4">
                                 <Image
@@ -104,7 +112,7 @@ export const Policy = (): JSX.Element => {
                     </div>
                 </div>
                 <div className="flex flex-col grow shrink-0 basis-auto flex-1 max-md:max-w-full w-1/2">
-                    <div onClick={() => setOpen(true)} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
+                    <div onClick={() => handleModalOpen("Fair Practices Code", "drylab.pdf")} className="cursor-pointer border self-stretch flex grow flex-col w-full p-5 rounded-3xl border-solid border-[rgba(255,255,255,0.26)] max-md:max-w-full [background:linear-gradient(0deg,rgb(47.81,47.81,47.81)_0%,rgba(0,0,0,0.73)_100%)]">
                         <div className="items-start self-stretch flex w-full justify-between gap-5 max-md:flex-wrap">
                             <div className="self-stretch flex items-start justify-between gap-4">
                                 <Image
@@ -132,7 +140,7 @@ export const Policy = (): JSX.Element => {
                 </div>
             </div>
             <div className="absolute hidden lg:block w-[890px] h-[787px] top-[-100px] right-[-500px] bg-[#002a38] rounded-[445px/393.5px] blur-[300px]" />
-            <Modal open={open} onClose={() => setOpen(false)} title={'Interest Rate Policy'} file={"drylab.pdf"} />
+            <Modal open={open} onClose={() => setOpen(false)} title={title} file={file} />
         </section>
     );
 };
