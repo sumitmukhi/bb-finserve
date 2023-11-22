@@ -188,3 +188,7 @@ div {
  .react-pdf__Page__annotations.annotationLayer{
   display: none;
  }
+
+ .react-pdf__Document{
+  padding-bottom: 100px;
+ }
