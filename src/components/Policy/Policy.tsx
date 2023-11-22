@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from 'react';
 import { Modal } from "../Modal";
 import Image from 'next/image';
@@ -7,6 +7,10 @@ import Image from 'next/image';
 export const Policy = (): JSX.Element => {
 
     const [open, setOpen] = useState(false);
+
+    useEffect(() => {
+        document.body.style.overflow = open ? "hidden" : "unset";
+      }, [open]);
 
     return (
         <section id="policy" className="relative self-stretch flex min-h-[97px] w-full flex-col" >

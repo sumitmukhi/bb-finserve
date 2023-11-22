@@ -17,7 +17,6 @@ export const Landing = (): JSX.Element => {
                     alt="Pankaj Tripathy - Blackbuck Landing Page"
                     width={647}
                     height={652}
-                    priority
                     className="absolute min-h-[652px] max-sm:min-h-[352px] max-sm:mt-[50px] w-[647px] object-cover object-center inset-0 m-auto"
                 />
                 <div className="relative text-white text-center text-6xl max-sm:ml-0 z-[2] max-sm:z-[2] max-sm:w-full font-bold [font-family:'General_Sans-Bold',Helvetica] tracking-[1.50px] leading-[72px] uppercase self-stretch mr-0 -ml-9 max-md:max-w-full max-md:text-4xl max-sm:mt-[360px] max-sm:text-3xl">

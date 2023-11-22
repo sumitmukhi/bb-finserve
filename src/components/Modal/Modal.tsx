@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import Image from 'next/image';
@@ -16,11 +16,7 @@ interface Props {
 export const Modal = ({ open, onClose, title, file }: Props): JSX.Element => {
 
     const [numPages, setNumPages] = useState<number>();
-    const [pageNumber, setPageNumber] = useState<number>(1);
-
-    function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
-        setNumPages(numPages);
-    }
+    
     return (
         <div className={`relative z-[99] max-sm: ${open ? "visible" : "hidden"}`} aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
@@ -53,17 +49,14 @@ export const Modal = ({ open, onClose, title, file }: Props): JSX.Element => {
                             </div>
                         </div>
                         <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4 max-h-full max-sm:max-h-full overflow-auto">
-                            <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
-                                <Page pageNumber={pageNumber} />
+                            <Document
+                                file={file}
+                                onLoadSuccess={({ numPages }) => setNumPages(numPages)}>
+                                {Array.apply(null, Array(numPages))
+                                    .map((x, i) => i + 1)
+                                    .map(page => <Page pageNumber={page} />)}
                             </Document>
-                            <p>
-                                Page {pageNumber} of {numPages}
-                            </p>
                         </div>
-                        {/* <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                            <button type="button" className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto">Deactivate</button>
-                            <button onClick={onClose} type="button" className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Cancel</button>
-                        </div> */}
                     </div>
                 </div>
             </div>

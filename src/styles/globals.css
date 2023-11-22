@@ -180,3 +180,11 @@ div {
  .swiper-pagination-bullet.swiper-pagination-bullet-active{
   @apply !bg-white !w-3 !h-3 !mb-[0px];
  }
+
+ .react-pdf__Page__textContent.textLayer{
+  display: none !important;
+ }
+
+ .react-pdf__Page__annotations.annotationLayer{
+  display: none;
+ }
