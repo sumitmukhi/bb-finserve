@@ -16,7 +16,7 @@ export const About = (): JSX.Element => {
                                 BlackBuck Finserve
                             </div>
                             <div className="text-black text-xl max-sm:text-base leading-8 self-stretch mt-2.5 max-md:max-w-full">
-                                BlackBuck's latest venture, a non-banking financial service
+                                BlackBuck&#39;s latest venture, a non-banking financial service
                                 provider, aims to provide financial solutions for truck owners
                                 in India
                             </div>

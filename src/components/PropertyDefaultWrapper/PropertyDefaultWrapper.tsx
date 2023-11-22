@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { useReducer } from "react";
+import Image from 'next/image';
 
 interface Props {
   property1: "variant-4" | "variant-2" | "variant-3" | "default";
@@ -155,81 +156,109 @@ export const PropertyDefaultWrapper = ({
                   <div className="w-[228px] h-[234px]">
                     <div className="h-[234px]">
                       <div className="relative w-[227px] h-[234px] fade-in">
-                        <img
+                        <Image
                           className="absolute w-[10px] h-[18px] top-[39px] left-[110px]"
                           alt="Rectangle"
+                          width={10}
+                          height={18}
                           src="/img/rectangle-26.png"
                         />
-                        <img
+                        <Image
                           className="absolute w-[13px] h-[16px] top-[49px] left-[76px]"
                           alt="Rectangle"
+                          width={13}
+                          height={16}
                           src="/img/rectangle-25.png"
                         />
-                        <img
+                        <Image
                           className="absolute w-[16px] h-[14px] top-[76px] left-[50px]"
                           alt="Rectangle"
+                          width={16}
+                          height={14}
                           src="/img/rectangle-24.png"
                         />
-                        <img
+                        <Image
                           className="absolute w-[17px] h-[11px] top-[112px] left-[41px]"
                           alt="Rectangle"
+                          width={17}
+                          height={11}
                           src={rectangle}
                         />
-                        <img
+                        <Image
                           className="absolute w-[16px] h-[14px] top-[145px] left-[50px]"
                           alt="Rectangle"
+                          width={16}
+                          height={14}
                           src="/img/rectangle-22.png"
                         />
-                        <img
+                        <Image
                           className="absolute w-[13px] h-[16px] top-[169px] left-[76px]"
                           alt="Rectangle"
+                          width={13}
+                          height={16}
                           src="/img/rectangle-21.png"
                         />
-                        <img
+                        <Image
                           className="absolute w-[10px] h-[18px] top-[178px] left-[110px]"
                           alt="Rectangle"
+                          width={10}
+                          height={18}
                           src="/img/rectangle-20.png"
                         />
-                        <img
+                        <Image
                           className="absolute w-[13px] h-[16px] top-[169px] left-[142px]"
                           alt="Rectangle"
+                          width={13}
+                          height={16}
                           src="/img/rectangle-19.png"
                         />
-                        <img
+                        <Image
                           className="absolute w-[16px] h-[14px] top-[145px] left-[165px]"
                           alt="Rectangle"
+                          width={16}
+                          height={14}
                           src="/img/rectangle-18.png"
                         />
-                        <img
+                        <Image
                           className="absolute w-[17px] h-[11px] top-[112px] left-[173px]"
                           alt="Rectangle"
+                          width={17}
+                          height={11}
                           src={img}
                         />
-                        <img
+                        <Image
                           className="absolute w-[16px] h-[14px] top-[76px] left-[165px]"
                           alt="Rectangle"
+                          width={16}
+                          height={14}
                           src="/img/rectangle-16.png"
                         />
-                        <img
+                        <Image
                           className="absolute w-[13px] h-[16px] top-[49px] left-[142px]"
                           alt="Rectangle"
+                          width={13}
+                          height={16}
                           src="/img/rectangle-15.png"
                         />
                         <div
                           className={`absolute w-[224px] h-[234px] top-0 left-[3px] bg-[url(/img/vector-2.svg)] bg-[100%_100%] ${groupClassName}`}
                         >
-                          <img
+                          <Image
                             className="absolute w-[224px] h-[234px] top-0 left-0"
                             alt="Clip path group"
+                            width={224}
+                            height={234}
                             src={clipPathGroup}
                           />
                         </div>
-                        <img
+                        <Image
                           className="absolute w-[44px] h-[56px] top-[37px] left-0"
                           alt="Rectangle"
+                          width={44}
+                          height={56}
                           src="/img/rectangle-14.png"
                         />
-                        <img className="absolute w-[73px] h-[46px] top-[93px] left-[77px]" alt="Group" src={group} />
+                        <Image width={73} height={46} className="absolute w-[73px] h-[46px] top-[93px] left-[77px]" alt="Group" src={group} />
                       </div>
                     </div>
                   </div>
@@ -241,58 +270,21 @@ export const PropertyDefaultWrapper = ({
 
         {state.property1 === "variant-2" && (
           <div className="fade-in-2" >
-            <img className="absolute transition-none w-[210px] left-[80px] top-[44px]  h-[284px]" alt="Kjdfhldfesbghj" src="/img/kjdfhldfesbghj-1.png" />
+            <Image width={210} height={284} className="absolute transition-none w-[210px] left-[80px] top-[44px]  h-[284px]" alt="Kjdfhldfesbghj" src="/img/kjdfhldfesbghj-1.png" />
           </div>
         )}
 
         {state.property1 === "variant-3" && (
           <div className={`${state.fadeClass}`} >
-            <img className="absolute transition-none w-[282px] left-[44px] top-[58px]  h-[257px]" alt="Kjdfhldfesbghj" src="/img/toto97-1.png" />
+            <Image width={282} height={257} className="absolute transition-none w-[282px] left-[44px] top-[58px]  h-[257px]" alt="Kjdfhldfesbghj" src="/img/toto97-1.png" />
           </div>
         )}
 
         {state.property1 === "variant-4" && (
           <div className={`${state.fadeClass}`} >
-            <img className="absolute transition-none w-[319px] left-[26px] top-[45px] object-cover h-[283px]" alt="Kjdfhldfesbghj" src="/img/wepik-export-20231010113226nog9-1.png"></img>
+            <Image width={319} height={283} className="absolute transition-none w-[319px] left-[26px] top-[45px] object-cover h-[283px]" alt="Kjdfhldfesbghj" src="/img/wepik-export-20231010113226nog9-1.png" />
           </div>
         )}
-
-
-
-
-        {/* {["variant-2", "variant-3", "variant-4"].includes(state.property1) && (
-          <img
-            className={`absolute transition-none ${state.property1 === "variant-3"
-                ? "w-[282px]"
-                : state.property1 === "variant-4"
-                  ? "w-[319px]"
-                  : "w-[210px]"
-              } ${state.property1 === "variant-3"
-                ? "left-[44px]"
-                : state.property1 === "variant-4"
-                  ? "left-[26px]"
-                  : "left-[80px]"
-              } ${state.property1 === "variant-3"
-                ? "top-[58px]"
-                : state.property1 === "variant-4"
-                  ? "top-[45px]"
-                  : "top-[44px]"
-              } ${state.property1 === "variant-4" ? "object-cover" : ""} ${state.property1 === "variant-3"
-                ? "h-[257px]"
-                : state.property1 === "variant-4"
-                  ? "h-[283px]"
-                  : "h-[284px]"
-              }`}
-            alt="Kjdfhldfesbghj"
-            src={
-              state.property1 === "variant-3"
-                ? "/img/toto97-1.png"
-                : state.property1 === "variant-4"
-                  ? "/img/wepik-export-20231010113226nog9-1.png"
-                  : "/img/kjdfhldfesbghj-1.png"
-            }
-          />
-        )} */}
       </div>
     </div>
   );
