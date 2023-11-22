@@ -25,7 +25,7 @@ export const Modal = ({ open, onClose, title, file }: Props): JSX.Element => {
                 <div className="flex min-h-full items-start justify-center text-center sm:items-center max-sm:p-0">
                     <div className="relative transform overflow-hidden rounded-none bg-white text-left shadow-xl transition-all max-w-full h-[100vh] sm:w-full max-sm:max-w-md">
                         <div className="bg-black px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-                            <div className="items-start shadow-sm flex gap-2 pl-4 pr-28 max-md:flex-wrap max-md:pr-5">
+                            <div className="items-start shadow-sm flex gap-2 pl-4 pr-28 max-md:flex-nowrap max-md:pr-5">
                                 <Image
                                     onClick={onClose}
                                     loading="lazy"
