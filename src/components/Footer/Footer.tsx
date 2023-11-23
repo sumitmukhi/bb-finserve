@@ -12,7 +12,7 @@ export const Footer = (): JSX.Element => {
                     alt="Blackbuck logo"
                     width={174}
                     height={100}
-                    className="aspect-[2.23] object-contain object-center w-[174px] overflow-hidden max-w-full self-end"
+                    className="aspect-[2.23] object-contain object-center w-[174px] overflow-hidden max-w-full self-end ml-[-10px]"
                 />{" "}
                 <div className="flex w-[604px] max-w-full max-sm:flex-col items-start justify-between gap-5 max-sm:mt-5 mt-16 self-end max-md:flex-wrap max-md:justify-center max-md:mt-10">
                     <a href="#home"><div className="text-white text-sm max-sm:text-base font-medium self-start">
