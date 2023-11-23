@@ -10,14 +10,14 @@ export const Landing = (): JSX.Element => {
                 <div className="w-full h-[905px] top-0 left-0 bg-[#002a38] rounded-[1134.5px/452.5px] blur-[500px]" />
             </div>
             <div className="absolute w-[480px] h-[352px] top-[-100px] left-[-100px] bg-[#002a38] blur-[60px] hidden max-sm:block" />
-            <div className="flex-col overflow-hidden max-sm:px-0 self-center relative flex min-h-[652px] w-full max-w-full mt-8 pt-96 pb-20 px-5 max-md:pt-24 max-sm:pt-10 max-sm:pb-0 max-sm:gap-0 max-sm:min-h-full">
+            <div className="flex-col overflow-hidden min-[1800px]:pt-[29%] max-sm:px-0 self-center relative flex min-h-[652px] min-[1800px]:min-h-full w-full max-w-full mt-8 pt-96 pb-20 px-5 max-md:pt-24 max-sm:pt-10 max-sm:pb-0 max-sm:gap-0 max-sm:min-h-full">
                 <Image
                     loading="lazy"
                     src="/img/vikram-bawa-20221117-1028-pankaj-t-blackbuck-copy-1.png"
                     alt="Pankaj Tripathy - Blackbuck Landing Page"
                     width={647}
                     height={652}
-                    className="absolute min-h-[652px] max-sm:min-h-[352px] max-sm:mt-[50px] w-[647px] object-cover object-center inset-0 m-auto"
+                    className="absolute min-[1800px]:min-h-[80%] min-[1800px]:ml-[35%] min-[1800px]:mt-10 min-h-[652px] max-sm:min-h-[352px] max-sm:mt-[50px] w-[647px] object-cover object-center inset-0 m-auto"
                 />
                 <div className="relative text-white text-center text-6xl max-sm:ml-0 z-[2] max-sm:z-[2] max-sm:w-full font-bold [font-family:'General_Sans-Bold',Helvetica] tracking-[1.50px] leading-[72px] uppercase self-stretch mr-0 -ml-9 max-md:max-w-full max-md:text-4xl max-sm:mt-[360px] max-sm:text-3xl">
                     <span className="hidden md:block">Easy & Quick Loans
@@ -38,11 +38,11 @@ export const Landing = (): JSX.Element => {
                     </div>
                 </div>
             </div>
-            <div className="absolute lg:block w-full lg:h-[300px] max-sm:h-[480px] bottom-0 max-sm:top-[230px] max-sm:bottom-0 z-[1]">
-                <div className="w-full lg:h-[300px] max-sm:h-[480px] [background:linear-gradient(0deg,rgb(11,15,16)_40%,rgba(11,15,16,0)_100%)] max-sm:[background:linear-gradient(0deg,rgb(11,11,11)_40%,rgba(11,11,11,0)_100%)]" />
+            <div className="absolute lg:block min-[1800px]:h-[calc((100vh-100px)*.6)] w-full lg:h-[300px] max-sm:h-[480px] bottom-0 max-sm:top-[230px] max-sm:bottom-0 z-[1]">
+                <div className="w-full min-[1800px]:h-[calc((100vh-100px)*.6)] lg:h-[300px] max-sm:h-[480px] [background:linear-gradient(0deg,rgb(11,15,16)_40%,rgba(11,15,16,0)_100%)] max-sm:[background:linear-gradient(0deg,rgb(11,11,11)_40%,rgba(11,11,11,0)_100%)]" />
             </div>
             <div className="self-stretch z-[1] flex w-full w-[60%] m-auto pt-0 max-sm:pt-12 flex-col pb-16 px-20 max-md:max-w-full max-md:px-5 ">
-                <div className="justify-center items-center lg:animate-bounce border self-center z-[1] flex w-12 max-w-full -m-8 flex-col p-2 rounded-[100px] border border-solid border-[rgba(255,255,255,0.26)] [background:linear-gradient(90deg,rgba(255,255,255,0.2)_0%,rgba(255,255,255,0)_100%)]">
+                <div className="justify-center items-center min-[1800px]:relative min-[1800px]:bottom-[100px] lg:animate-bounce border self-center z-[1] flex w-12 max-w-full -m-8 flex-col p-2 rounded-[100px] border border-solid border-[rgba(255,255,255,0.26)] [background:linear-gradient(90deg,rgba(255,255,255,0.2)_0%,rgba(255,255,255,0)_100%)]">
                     <a href="#offer">
                         <KeyboardArrowDown className="!relative !w-[32px] !h-[32px]" color="white" />
                     </a>
